@@ -1146,7 +1146,7 @@ section[id] {
   }
 
   .emtss-hero h1 {
-    font-size: clamp(44px, 18vw, 68px);
+    font-size: clamp(44px, 18vw, 52px);
   }
 
   .emtss-hero-actions {
@@ -1165,7 +1165,7 @@ section[id] {
   }
 
   .emtss-hero-stats {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
     margin-top: 36px;
   }
 
@@ -1177,7 +1177,7 @@ section[id] {
   }
 
   .emtss-hero-stats div:last-child {
-    border-bottom: 0;
+    /* border-bottom: 0; */
   }
 
   .emtss-image-card,
