@@ -1116,6 +1116,72 @@ section[id] {
   .emtss-footer-brand {
     grid-column: 1 / -1;
   }
+
+  .emtss-hero-actions {
+    gap: 10px;
+  }
+
+  .emtss-hero-actions .emtss-btn {
+    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+
+  .emtss-modal .modal-dialog {
+    max-width: min(520px, calc(100% - 16px));
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .emtss-modal .modal-content {
+    max-height: calc(100dvh - 16px);
+  }
+
+  .emtss-modal .modal-header,
+  .emtss-modal .modal-footer {
+    padding: 12px 16px;
+  }
+
+  .emtss-modal .modal-body {
+    padding: 14px 16px;
+    overflow-y: auto;
+  }
+
+  .emtss-modal .row {
+    --bs-gutter-x: 0.75rem;
+    --bs-gutter-y: 0.55rem;
+  }
+
+  .emtss-modal .modal-title {
+    font-size: 24px;
+  }
+
+  .emtss-modal .form-label {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .emtss-modal .form-control {
+    min-height: 40px;
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+
+  .emtss-modal textarea.form-control {
+    height: 82px;
+    min-height: 82px;
+  }
+
+  .emtss-modal .emtss-btn {
+    min-height: 40px;
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .emtss-form-response {
+    margin-top: 8px;
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -1183,10 +1249,21 @@ section[id] {
 
   .emtss-hero-actions {
     align-items: stretch;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 8px;
   }
 
-  .emtss-hero-actions .emtss-btn,
+  .emtss-hero-actions .emtss-btn {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    min-height: 42px;
+    padding: 9px 8px;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+
   .emtss-cta-actions .emtss-btn {
     width: 100%;
   }
@@ -1228,6 +1305,45 @@ section[id] {
   .emtss-footer-bottom {
     gap: 10px;
   }
+
+  .emtss-modal .modal-dialog {
+    max-width: calc(100% - 10px);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .emtss-modal .modal-content {
+    max-height: calc(100dvh - 10px);
+  }
+
+  .emtss-modal .modal-header,
+  .emtss-modal .modal-footer {
+    padding: 9px 12px;
+  }
+
+  .emtss-modal .modal-body {
+    padding: 10px 12px;
+  }
+
+  .emtss-modal .row {
+    --bs-gutter-x: 0.55rem;
+    --bs-gutter-y: 0.42rem;
+  }
+
+  .emtss-modal .modal-title {
+    font-size: 21px;
+    line-height: 1;
+  }
+
+  .emtss-modal .form-control {
+    min-height: 36px;
+    padding: 6px 9px;
+  }
+
+  .emtss-modal textarea.form-control {
+    height: 68px;
+    min-height: 68px;
+  }
 }
 
 @media (max-width: 380px) {
@@ -1239,5 +1355,15 @@ section[id] {
   .emtss-btn {
     padding-right: 16px;
     padding-left: 16px;
+  }
+
+  .emtss-hero-actions {
+    gap: 6px;
+  }
+
+  .emtss-hero-actions .emtss-btn {
+    min-height: 40px;
+    padding: 8px 6px;
+    font-size: 10.5px;
   }
 }
