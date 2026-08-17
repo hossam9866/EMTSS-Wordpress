@@ -51,6 +51,23 @@
     max-width: none;
 }
 
+.emtss-admin-field.is-rich-editor .wp-editor-wrap {
+    width: 100%;
+    max-width: none;
+}
+
+.emtss-admin-field.is-rich-editor .wp-editor-area {
+    min-height: 132px;
+}
+
+.emtss-admin-field.is-rich-editor-template textarea {
+    min-height: 132px;
+}
+
+.emtss-admin-field.is-rich-editor .quicktags-toolbar input {
+    width: auto;
+}
+
 .emtss-media-control {
     display: flex;
     gap: 8px;

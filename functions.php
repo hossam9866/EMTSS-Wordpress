@@ -86,6 +86,7 @@ function emtss_admin_assets($hook)
     }
 
     wp_enqueue_media();
+    wp_enqueue_editor();
     wp_enqueue_style('emtss-admin', EMTSS_THEME_URI . '/assets/css/admin.css', array(), EMTSS_VERSION);
     wp_enqueue_script('emtss-admin', EMTSS_THEME_URI . '/assets/js/admin.js', array(), EMTSS_VERSION, true);
 }

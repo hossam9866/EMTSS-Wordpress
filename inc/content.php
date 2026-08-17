@@ -660,6 +660,24 @@ function emtss_format_text($text)
     return nl2br(esc_html((string) $text));
 }
 
+function emtss_format_trademark_text($text)
+{
+    $text = esc_html((string) $text);
+
+    return preg_replace('/(?:\s*\(TM\)|\s*™|\s+TM)(?=$|[\s.,;:!?؟])/u', '<sup class="emtss-tm">TM</sup>', $text);
+}
+
+function emtss_format_rich_text($text)
+{
+    $text = trim((string) $text);
+
+    if ($text === '') {
+        return '';
+    }
+
+    return wpautop(wp_kses_post($text));
+}
+
 function emtss_polylang_current_has_translation()
 {
     $current_id = get_queried_object_id();
@@ -784,7 +802,7 @@ function emtss_section_intro($section, $light = false, $center = false)
     <h2><?php echo emtss_format_text($section['title']); ?></h2>
     <?php endif; ?>
     <?php if (!empty($section['subtitle'])) : ?>
-    <p class="emtss-section-subtitle"><?php echo emtss_format_text($section['subtitle']); ?></p>
+    <div class="emtss-rich-text emtss-section-subtitle"><?php echo emtss_format_rich_text($section['subtitle']); ?></div>
     <?php endif; ?>
 </div>
 <?php
@@ -832,7 +850,7 @@ function emtss_render_hero()
             <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow'] ?? ''); ?></p>
             <h1><?php echo emtss_format_text($section['title'] ?? ''); ?></h1>
             <p class="emtss-hero-kicker"><?php echo esc_html($section['kicker'] ?? ''); ?></p>
-            <p class="emtss-hero-body"><?php echo emtss_format_text($section['body'] ?? ''); ?></p>
+            <div class="emtss-rich-text emtss-hero-body"><?php echo emtss_format_rich_text($section['body'] ?? ''); ?></div>
             <div class="emtss-hero-actions">
                 <a class="btn emtss-btn emtss-btn-gold"
                     href="<?php echo esc_url(emtss_normalize_link_url($section['primary_url'] ?? '#solutions')); ?>"><?php echo esc_html($section['primary'] ?? ''); ?></a>
@@ -881,7 +899,7 @@ function emtss_render_mission()
                 </div>
                 <div class="emtss-card-body">
                     <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
-                    <p><?php echo emtss_format_text($card['body'] ?? ''); ?></p>
+                    <div class="emtss-rich-text emtss-card-copy"><?php echo emtss_format_rich_text($card['body'] ?? ''); ?></div>
                 </div>
             </<?php echo $card_url ? 'a' : 'article'; ?>>
             <?php endforeach; ?>
@@ -906,7 +924,7 @@ function emtss_render_alert_hub()
                 <div class="emtss-alert-copy">
                     <span class="emtss-pill"><?php echo esc_html($section['eyebrow'] ?? ''); ?></span>
                     <h2><?php echo emtss_format_text($section['title'] ?? ''); ?></h2>
-                    <p><?php echo emtss_format_text($section['subtitle'] ?? ''); ?></p>
+                    <div class="emtss-rich-text emtss-alert-text"><?php echo emtss_format_rich_text($section['subtitle'] ?? ''); ?></div>
                     <ul class="emtss-check-list">
                         <?php foreach (($section['features'] ?? array()) as $feature) : ?>
                         <li><i class="bi bi-check2"></i><span><?php echo esc_html($feature); ?></span></li>
@@ -925,7 +943,7 @@ function emtss_render_alert_hub()
                             <img src="<?php echo esc_url(emtss_asset_url($figure['image'] ?? '')); ?>"
                                 alt="<?php echo esc_attr($figure['title'] ?? ''); ?>" loading="lazy">
                             <?php if ($figure_url) : ?></a><?php endif; ?>
-                        <figcaption><?php echo esc_html($figure['title'] ?? ''); ?></figcaption>
+                        <figcaption><?php echo emtss_format_trademark_text($figure['title'] ?? ''); ?></figcaption>
                     </figure>
                     <?php endforeach; ?>
                 </div>
@@ -954,7 +972,7 @@ function emtss_render_domains()
                 <img src="<?php echo esc_url(emtss_asset_url($card['icon'] ?? '')); ?>" alt="" aria-hidden="true"
                     loading="lazy">
                 <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
-                <p><?php echo esc_html($card['body'] ?? ''); ?></p>
+                <div class="emtss-rich-text emtss-domain-copy"><?php echo emtss_format_rich_text($card['body'] ?? ''); ?></div>
             </<?php echo $card_url ? 'a' : 'article'; ?>>
             <?php endforeach; ?>
         </div>
@@ -982,7 +1000,7 @@ function emtss_render_field()
                     alt="<?php echo esc_attr($card['title'] ?? ''); ?>" loading="lazy">
                 <div>
                     <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
-                    <p><?php echo esc_html($card['body'] ?? ''); ?></p>
+                    <div class="emtss-rich-text emtss-field-copy"><?php echo emtss_format_rich_text($card['body'] ?? ''); ?></div>
                 </div>
             </<?php echo $card_url ? 'a' : 'article'; ?>>
             <?php endforeach; ?>
@@ -1057,7 +1075,7 @@ function emtss_render_cta()
         <div class="emtss-cta-inner">
             <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow'] ?? ''); ?></p>
             <h2><?php echo esc_html($section['title'] ?? ''); ?></h2>
-            <p><?php echo emtss_format_text($section['subtitle'] ?? ''); ?></p>
+            <div class="emtss-rich-text emtss-cta-copy"><?php echo emtss_format_rich_text($section['subtitle'] ?? ''); ?></div>
             <div class="emtss-cta-actions">
                 <?php emtss_link_or_modal_button($section['button'] ?? __('Request a Private Briefing', 'emtss'), $section['button_url'] ?? '', 'briefing', 'emtss-btn emtss-btn-gold'); ?>
                 <?php emtss_link_or_modal_button($section['contact_button'] ?? __('Contact Us', 'emtss'), $section['contact_button_url'] ?? '', 'contact', 'emtss-btn emtss-btn-outline'); ?>
@@ -1106,7 +1124,7 @@ function emtss_render_site_footer()
         <div class="emtss-footer-top">
             <div class="emtss-footer-brand">
                 <img src="<?php echo esc_url(emtss_asset_url($section['logo'] ?? '')); ?>" alt="EMTSS" loading="lazy">
-                <p><?php echo emtss_format_text($section['description'] ?? ''); ?></p>
+                <div class="emtss-rich-text emtss-footer-description"><?php echo emtss_format_rich_text($section['description'] ?? ''); ?></div>
             </div>
             <div>
                 <h2><?php echo esc_html($section['company']['title'] ?? ''); ?></h2>

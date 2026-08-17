@@ -28,7 +28,109 @@
             .replace(/^-|-$/g, '');
     }
 
+    function uniqueEditorId(name) {
+        return sanitizeId(name) + '-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 7);
+    }
+
+    function syncWpEditors() {
+        if (window.tinyMCE && typeof window.tinyMCE.triggerSave === 'function') {
+            window.tinyMCE.triggerSave();
+        }
+    }
+
+    function removeWpEditor(textarea) {
+        if (!textarea || !textarea.id) {
+            return;
+        }
+
+        if (window.wp && window.wp.editor && typeof window.wp.editor.remove === 'function') {
+            try {
+                window.wp.editor.remove(textarea.id);
+                return;
+            } catch (error) {
+                // Fall through to the TinyMCE cleanup below.
+            }
+        }
+
+        if (window.tinyMCE && window.tinyMCE.get(textarea.id)) {
+            window.tinyMCE.execCommand('mceRemoveEditor', false, textarea.id);
+        }
+    }
+
+    function removeWpEditors(scope) {
+        if (!scope) {
+            return;
+        }
+
+        syncWpEditors();
+        scope.querySelectorAll('textarea.wp-editor-area[id]').forEach(removeWpEditor);
+    }
+
+    function buildEditorShell(textarea) {
+        var id = textarea.id;
+        var shell = document.createElement('div');
+        var containerId = 'wp-' + id + '-editor-container';
+
+        shell.id = 'wp-' + id + '-wrap';
+        shell.className = 'wp-core-ui wp-editor-wrap tmce-active';
+        shell.innerHTML = [
+            '<div id="wp-' + escapeHtml(id) + '-editor-tools" class="wp-editor-tools hide-if-no-js">',
+            '<div class="wp-editor-tabs">',
+            '<button type="button" id="' + escapeHtml(id) + '-tmce" class="wp-switch-editor switch-tmce" data-wp-editor-id="' + escapeHtml(id) + '">Visual</button>',
+            '<button type="button" id="' + escapeHtml(id) + '-html" class="wp-switch-editor switch-html" data-wp-editor-id="' + escapeHtml(id) + '">Text</button>',
+            '</div>',
+            '</div>',
+            '<div id="' + escapeHtml(containerId) + '" class="wp-editor-container"></div>'
+        ].join('');
+
+        textarea.parentNode.insertBefore(shell, textarea);
+        shell.querySelector('.wp-editor-container').appendChild(textarea);
+
+        shell.querySelectorAll('.wp-switch-editor').forEach(function (button) {
+            button.addEventListener('click', function () {
+                if (window.switchEditors && typeof window.switchEditors.switchto === 'function') {
+                    window.switchEditors.switchto(button);
+                }
+            });
+        });
+    }
+
+    function initializeDynamicRichEditors(scope) {
+        if (!scope || !window.wp || !window.wp.editor || typeof window.wp.editor.initialize !== 'function') {
+            return;
+        }
+
+        scope.querySelectorAll('textarea[data-rich-editor-template]').forEach(function (textarea) {
+            var field = textarea.closest('.emtss-admin-field');
+            var label = field ? field.querySelector('label') : null;
+
+            textarea.id = uniqueEditorId(textarea.name);
+
+            if (label) {
+                label.setAttribute('for', textarea.id);
+            }
+
+            textarea.classList.add('wp-editor-area');
+            textarea.removeAttribute('data-rich-editor-template');
+            buildEditorShell(textarea);
+
+            window.wp.editor.initialize(textarea.id, {
+                tinymce: {
+                    wpautop: true,
+                    toolbar1: 'formatselect,bold,italic,bullist,numlist,link,unlink,undo,redo',
+                    toolbar2: ''
+                },
+                quicktags: {
+                    buttons: 'strong,em,link,ul,ol,li,close'
+                },
+                mediaButtons: false
+            });
+        });
+    }
+
     function updateRepeaterNames(group) {
+        syncWpEditors();
+
         var baseName = group.getAttribute('data-repeat-name');
         var itemsWrap = group.querySelector(':scope > .emtss-admin-group-body > [data-repeat-items]');
         var items = itemsWrap ? Array.prototype.slice.call(itemsWrap.querySelectorAll(':scope > [data-repeat-item]')) : [];
@@ -47,7 +149,7 @@
 
             item.querySelectorAll('[name]').forEach(function (field) {
                 field.name = field.name.replace(prefixPattern, baseName + '[' + index + ']');
-                if (field.id) {
+                if (field.id && !field.classList.contains('wp-editor-area')) {
                     field.id = sanitizeId(field.name);
                 }
             });
@@ -105,6 +207,7 @@
 
             if (addButton) {
                 event.preventDefault();
+                syncWpEditors();
                 var group = addButton.closest('[data-repeat-group]');
                 var template = group ? group.querySelector(':scope > .emtss-admin-group-body > template[data-repeat-template]') : null;
                 var itemsWrap = group ? group.querySelector(':scope > .emtss-admin-group-body > [data-repeat-items]') : null;
@@ -112,17 +215,21 @@
 
                 if (template && itemsWrap) {
                     itemsWrap.insertAdjacentHTML('beforeend', template.innerHTML.replace(/__INDEX__/g, String(index)));
+                    var addedItem = itemsWrap.lastElementChild;
                     updateRepeaterNames(group);
+                    initializeDynamicRichEditors(addedItem);
                 }
                 return;
             }
 
             if (removeButton) {
                 event.preventDefault();
+                syncWpEditors();
                 var item = removeButton.closest('[data-repeat-item]');
                 var parentGroup = removeButton.closest('[data-repeat-group]');
 
                 if (item) {
+                    removeWpEditors(item);
                     item.remove();
                 }
 
@@ -130,6 +237,10 @@
                     updateRepeaterNames(parentGroup);
                 }
             }
+        });
+
+        document.querySelectorAll('.emtss-admin-wrap form').forEach(function (adminForm) {
+            adminForm.addEventListener('submit', syncWpEditors);
         });
 
         var form = document.getElementById('emtss-reply-form');

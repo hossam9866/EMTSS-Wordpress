@@ -25,7 +25,7 @@ get_header();
                 <h1><?php echo emtss_format_text($section['title'] ?? __('Page not found', 'emtss')); ?></h1>
 
                 <?php if (!empty($section['subtitle'])) : ?>
-                    <p class="emtss-not-found-copy"><?php echo emtss_format_text($section['subtitle']); ?></p>
+                    <div class="emtss-rich-text emtss-not-found-copy"><?php echo emtss_format_rich_text($section['subtitle']); ?></div>
                 <?php endif; ?>
 
                 <div class="emtss-hero-actions">

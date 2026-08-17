@@ -70,6 +70,35 @@ function emtss_admin_field_id($name)
     return 'emtss-' . sanitize_title(str_replace(array('[', ']'), '-', $name));
 }
 
+function emtss_admin_editor_id($name)
+{
+    return 'emtss_editor_' . substr(md5((string) $name), 0, 12);
+}
+
+function emtss_admin_rich_text_name_matches($name)
+{
+    $name = (string) $name;
+
+    return (bool) (
+        preg_match('/\[(body|subtitle|description)\]$/i', $name)
+        || preg_match('/\[thank_you_email\]\[message\]$/i', $name)
+    );
+}
+
+function emtss_admin_is_rich_text_field($name)
+{
+    $name = (string) $name;
+
+    return strpos($name, '__INDEX__') === false && emtss_admin_rich_text_name_matches($name);
+}
+
+function emtss_admin_is_rich_text_template_field($name)
+{
+    $name = (string) $name;
+
+    return strpos($name, '__INDEX__') !== false && emtss_admin_rich_text_name_matches($name);
+}
+
 function emtss_admin_blank_value($value)
 {
     if (!is_array($value)) {
@@ -142,8 +171,43 @@ function emtss_admin_render_nested_fields($name, $value, $label = '', $depth = 0
         $label       = $label ? $label : basename((string) $name);
         $is_media    = preg_match('/\[(image|logo|background|icon)\]$/i', (string) $name);
         $is_url      = preg_match('/\[(url|link|logo_link|primary_url|secondary_url|button_url|contact_button_url)\]$/i', (string) $name);
+        $rich_editor = !$is_media && !$is_url && emtss_admin_is_rich_text_field($name);
+        $rich_template = !$is_media && !$is_url && emtss_admin_is_rich_text_template_field($name);
         $textarea    = !$is_media && !$is_url && (strlen((string) $value) > 70 || preg_match('/body|subtitle|description|message|copyright|title/i', (string) $name) || strpos((string) $value, "\n") !== false);
         $label_clean = ucwords(str_replace(array('_', '-'), ' ', (string) $label));
+
+        if ($rich_editor) {
+            $editor_id = emtss_admin_editor_id($name);
+            ?>
+            <div class="emtss-admin-field is-rich-editor">
+                <span><label for="<?php echo esc_attr($editor_id); ?>"><?php echo esc_html($label_clean); ?></label></span>
+                <?php
+                wp_editor((string) $value, $editor_id, array(
+                    'textarea_name' => $name,
+                    'textarea_rows' => 5,
+                    'media_buttons' => false,
+                    'teeny'         => false,
+                    'quicktags'     => true,
+                    'tinymce'       => array(
+                        'toolbar1' => 'formatselect,bold,italic,bullist,numlist,link,unlink,undo,redo',
+                        'toolbar2' => '',
+                    ),
+                ));
+                ?>
+            </div>
+            <?php
+            return;
+        }
+
+        if ($rich_template) {
+            ?>
+            <div class="emtss-admin-field is-rich-editor is-rich-editor-template">
+                <span><label for="<?php echo esc_attr($id); ?>"><?php echo esc_html($label_clean); ?></label></span>
+                <textarea id="<?php echo esc_attr($id); ?>" name="<?php echo esc_attr($name); ?>" rows="5" data-rich-editor-template><?php echo esc_textarea($value); ?></textarea>
+            </div>
+            <?php
+            return;
+        }
         ?>
         <label class="emtss-admin-field <?php echo $is_media ? 'is-media-field' : ''; ?>" for="<?php echo esc_attr($id); ?>">
             <span><?php echo esc_html($label_clean); ?></span>

@@ -158,7 +158,7 @@ function emtss_send_thank_you_email($post_id, $data)
     $footer        = emtss_apply_email_tokens($email_content['footer'] ?? '', $data);
 
     $body = '<p style="margin:0 0 16px;color:#4a5a68;font-size:15px;line-height:1.7;">' . esc_html(sprintf(__('Hello %s,', 'emtss'), $data['name'])) . '</p>';
-    $body .= '<div style="margin:0 0 20px;color:#4a5a68;font-size:15px;line-height:1.7;">' . wpautop(esc_html($message)) . '</div>';
+    $body .= '<div style="margin:0 0 20px;color:#4a5a68;font-size:15px;line-height:1.7;">' . emtss_format_rich_text($message) . '</div>';
     $body .= '<table role="presentation" cellspacing="0" cellpadding="0" style="width:100%;margin:20px 0;border-collapse:collapse;background:#f4f6f3;border:1px solid #dee3e8;border-radius:8px;">';
     $body .= '<tr><td style="padding:14px 16px;color:#445840;font-weight:700;">' . esc_html__('Request type', 'emtss') . '</td><td style="padding:14px 16px;color:#202b20;">' . esc_html(emtss_inquiry_type_label($data['type'])) . '</td></tr>';
     $body .= '<tr><td style="padding:14px 16px;color:#445840;font-weight:700;border-top:1px solid #dee3e8;">' . esc_html__('Phone', 'emtss') . '</td><td style="padding:14px 16px;color:#202b20;border-top:1px solid #dee3e8;">' . esc_html($data['phone']) . '</td></tr>';
