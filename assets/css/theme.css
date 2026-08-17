@@ -1178,7 +1178,7 @@ section[id] {
   }
 
   .emtss-hero h1 {
-    font-size: clamp(44px, 18vw, 52px);
+    font-size: clamp(44px, 18vw, 42px);
   }
 
   .emtss-hero-actions {
