@@ -852,7 +852,8 @@ section[id] {
   padding-top: 24px;
 }
 
-.emtss-footer-bottom p {
+.emtss-footer-bottom p,
+.emtss-footer-copyright {
   margin: 0;
   color: var(--emtss-gold);
   font: 400 12px/1.65 "IBM Plex Mono", monospace;

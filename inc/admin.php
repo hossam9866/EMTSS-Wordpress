@@ -80,7 +80,7 @@ function emtss_admin_rich_text_name_matches($name)
     $name = (string) $name;
 
     return (bool) (
-        preg_match('/\[(body|subtitle|description)\]$/i', $name)
+        preg_match('/\[(body|subtitle|description|copyright)\]$/i', $name)
         || preg_match('/\[thank_you_email\]\[message\]$/i', $name)
     );
 }

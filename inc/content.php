@@ -1164,7 +1164,7 @@ function emtss_render_site_footer()
             </div>
         </div>
         <div class="emtss-footer-bottom">
-            <p><?php echo esc_html($section['copyright'] ?? ''); ?></p>
+            <div class="emtss-rich-text emtss-footer-copyright"><?php echo emtss_format_rich_text($section['copyright'] ?? ''); ?></div>
             <p><?php echo esc_html($section['locations'] ?? ''); ?></p>
         </div>
     </div>
