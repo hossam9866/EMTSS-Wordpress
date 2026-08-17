@@ -169,7 +169,7 @@ section[id] {
 }
 
 .emtss-btn-gold {
-  color: var(--emtss-deep);
+  color: #ffffff;
   background: var(--emtss-gold);
   border-color: var(--emtss-gold);
 }
