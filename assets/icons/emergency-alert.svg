@@ -1,0 +1,7 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Emergency Alert">
+<path id="Vector" d="M14 4C9.58 4 6 7.58 6 12V18L4 21H24L22 18V12C22 7.58 18.42 4 14 4Z" stroke="#D4A017" stroke-width="2" stroke-linejoin="round"/>
+<path id="Vector_2" d="M11 21C11 22.6569 12.3431 24 14 24C15.6569 24 17 22.6569 17 21" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_3" d="M14 1V4" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

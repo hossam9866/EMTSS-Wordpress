@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Robot">
+<path id="Vector" d="M18 10H10C8.34315 10 7 11.3431 7 13V19C7 20.6569 8.34315 22 10 22H18C19.6569 22 21 20.6569 21 19V13C21 11.3431 19.6569 10 18 10Z" stroke="#D4A017" stroke-width="2"/>
+<path id="Vector_2" d="M11 18C12.1046 18 13 17.1046 13 16C13 14.8954 12.1046 14 11 14C9.89543 14 9 14.8954 9 16C9 17.1046 9.89543 18 11 18Z" fill="#D4A017"/>
+<path id="Vector_3" d="M17 18C18.1046 18 19 17.1046 19 16C19 14.8954 18.1046 14 17 14C15.8954 14 15 14.8954 15 16C15 17.1046 15.8954 18 17 18Z" fill="#D4A017"/>
+<path id="Vector_4" d="M14 10V6" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_5" d="M14 6.5C14.8284 6.5 15.5 5.82843 15.5 5C15.5 4.17157 14.8284 3.5 14 3.5C13.1716 3.5 12.5 4.17157 12.5 5C12.5 5.82843 13.1716 6.5 14 6.5Z" fill="#D4A017"/>
+<path id="Vector_6" d="M4 15H7" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_7" d="M21 15H24" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

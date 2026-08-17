@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Radar">
+<path id="Vector" d="M14 26C20.6274 26 26 20.6274 26 14C26 7.37258 20.6274 2 14 2" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_2" d="M14 20C17.3137 20 20 17.3137 20 14C20 10.6863 17.3137 8 14 8" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+<path id="Vector_3" d="M14 16C15.1046 16 16 15.1046 16 14C16 12.8954 15.1046 12 14 12C12.8954 12 12 12.8954 12 14C12 15.1046 12.8954 16 14 16Z" fill="#D4A017"/>
+<path id="Vector_4" d="M14 14L6 22" stroke="#D4A017" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>
