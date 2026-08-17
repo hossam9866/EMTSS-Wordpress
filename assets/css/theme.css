@@ -1129,10 +1129,11 @@ section[id] {
 
   .emtss-card-grid-4,
   .emtss-domain-grid,
-  .emtss-standard-grid,
   .emtss-partner-grid,
   .emtss-figure-grid {
-    /* grid-template-columns: 1fr; */
+    grid-template-columns: 1fr;
+  }
+  .emtss-standard-grid {
   }
 
   .emtss-domain-card {
