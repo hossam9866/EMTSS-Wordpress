@@ -1233,7 +1233,8 @@ section[id] {
 
   .emtss-card-grid-4,
   .emtss-domain-grid,
-  .emtss-figure-grid {
+  .emtss-figure-grid,
+  .emtss-partner-grid {
     grid-template-columns: 1fr;
   }
   .emtss-standard-grid {
