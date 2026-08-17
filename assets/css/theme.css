@@ -1132,7 +1132,39 @@ section[id] {
   .emtss-standard-grid,
   .emtss-partner-grid,
   .emtss-figure-grid {
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+  }
+
+  .emtss-domain-card {
+    display: grid;
+    grid-template-columns: max-content minmax(0, 1fr);
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 8px;
+    padding: 20px 16px;
+    text-align: start;
+  }
+
+  .emtss-domain-card img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    justify-self: start;
+  }
+
+  .emtss-domain-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    text-align: start;
+  }
+
+  .emtss-domain-card p {
+    grid-column: 1 / -1;
+    margin-top: 4px;
+    text-align: start;
   }
 
   .emtss-hero {
