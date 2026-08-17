@@ -67,7 +67,7 @@ function emtss_enqueue_assets()
         ),
         'modalTitles' => array(
             'briefing' => $modal['briefing_title'] ?? __('Request a Private Briefing', 'emtss'),
-            'contact'  => $modal['contact_title'] ?? __('Contact EMSS', 'emtss'),
+            'contact'  => $modal['contact_title'] ?? __('Contact EMTSS', 'emtss'),
         ),
         'messages'    => array(
             'success'      => $modal['success'] ?? __('Thank you. Our team will contact you shortly.', 'emtss'),

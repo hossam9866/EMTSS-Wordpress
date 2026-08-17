@@ -373,7 +373,7 @@ function emtss_render_inquiries_page()
                     <h2><?php esc_html_e('Email Look Before Send', 'emtss'); ?></h2>
                     <div class="emtss-email-preview">
                         <div class="emtss-email-preview-header">
-                            <img src="<?php echo esc_url(emtss_asset_url('assets/images/logo-header.png')); ?>" alt="EMSS">
+                            <img src="<?php echo esc_url(emtss_asset_url('assets/images/logo-header.png')); ?>" alt="EMTSS">
                         </div>
                         <div class="emtss-email-preview-body">
                             <h3 data-preview-subject><?php esc_html_e('Subject preview', 'emtss'); ?></h3>

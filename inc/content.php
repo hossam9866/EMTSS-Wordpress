@@ -56,10 +56,10 @@ function emtss_default_content()
             'id'         => 'home',
             'background' => 'assets/images/hero-bg.png',
             'logo'       => 'assets/images/logo-footer.png',
-            'eyebrow'    => 'EMSS // Emerging Technologies',
+            'eyebrow'    => 'EMTSS // Emerging Technologies',
             'title'      => "Sovereign by design.\nMission ready.",
             'kicker'     => 'Connected command. Anywhere. Anytime.',
-            'body'       => 'EMSS delivers sovereign AI, C4ISR architecture, and zero-trust security to defense, government, and critical infrastructure sectors - bridging global innovation with in-kingdom systems built for decision advantage.',
+            'body'       => 'EMTSS delivers sovereign AI, C4ISR architecture, and zero-trust security to defense, government, and critical infrastructure sectors - bridging global innovation with in-kingdom systems built for decision advantage.',
             'primary'    => 'Explore Capabilities',
             'primary_url' => '#solutions',
             'secondary'  => 'Request a Private Briefing',
@@ -68,7 +68,7 @@ function emtss_default_content()
                 array('label' => 'Headquarters', 'value' => 'Riyadh, KSA', 'url' => ''),
                 array('label' => 'Regional Presence', 'value' => 'KSA - Qatar - Kuwait', 'url' => ''),
                 array('label' => 'Sector', 'value' => 'Defense & Security', 'url' => ''),
-                array('label' => 'Contact', 'value' => 'info@emss.net', 'url' => 'mailto:info@emss.net'),
+                array('label' => 'Contact', 'value' => 'info@emtss.net', 'url' => 'mailto:info@emtss.net'),
             ),
         ),
         'mission' => array(
@@ -88,7 +88,7 @@ function emtss_default_content()
             'background' => 'assets/images/alert-hub-bg.png',
             'eyebrow'    => 'Proprietary IP Platform',
             'title'      => 'Critical operational alerting, built z.',
-            'subtitle'   => "Alert Hub is EMSS's Arabic-first, AI-driven incident and operational alert management platform - engineered for in-kingdom data sovereignty from day one.",
+            'subtitle'   => "Alert Hub is EMTSS's Arabic-first, AI-driven incident and operational alert management platform - engineered for in-kingdom data sovereignty from day one.",
             'button'     => 'See Deployment Partners',
             'button_url' => '#partners',
             'features'   => array(
@@ -104,7 +104,7 @@ function emtss_default_content()
         ),
         'domains' => array(
             'id'       => 'ecosystem',
-            'eyebrow'  => 'The EMSS Capability Ecosystem',
+            'eyebrow'  => 'The EMTSS Capability Ecosystem',
             'title'    => 'Five core domains, purpose-built',
             'subtitle' => 'Full-spectrum applied capability across command, intelligence, autonomy, cybersecurity, and emergency response.',
             'cards'    => array(
@@ -119,7 +119,7 @@ function emtss_default_content()
             'id'       => 'field',
             'eyebrow'  => 'Operational Impact',
             'title'    => 'Deployed in the Field',
-            'subtitle' => 'Outcomes from four representative EMSS deployments',
+            'subtitle' => 'Outcomes from four representative EMTSS deployments',
             'cards'    => array(
                 array('title' => 'Multi-Domain C4ISR', 'body' => 'Delivered real-time situational awareness, accelerated decision cycle times, and enabled AI-assisted mission search and intelligence analysis.', 'image' => 'assets/images/field-c4isr.png', 'url' => ''),
                 array('title' => 'Biometric Identity', 'body' => 'Reduced authentication friction, eliminated password vulnerabilities, and secured user access across high-security platforms.', 'image' => 'assets/images/field-biometric.png', 'url' => ''),
@@ -155,15 +155,15 @@ function emtss_default_content()
             'id'       => 'contact',
             'eyebrow'  => 'Mission-Fit Deployment',
             'title'    => 'Bring sovereign command to your operation.',
-            'subtitle' => 'Book a private briefing with EMSS to map our capabilities to your mission environment, connectivity constraints, and procurement pathway.',
+            'subtitle' => 'Book a private briefing with EMTSS to map our capabilities to your mission environment, connectivity constraints, and procurement pathway.',
             'button'   => 'Request a Private Briefing',
             'button_url' => '',
             'contact_button' => 'Contact Us',
             'contact_button_url' => '',
         ),
         'why' => array(
-            'id'       => 'why-emss',
-            'eyebrow'  => 'Why EMSS',
+            'id'       => 'why-emtss',
+            'eyebrow'  => 'Why EMTSS',
             'title'    => 'Built for both sides of the mission',
             'columns'  => array(
                 array(
@@ -189,7 +189,7 @@ function emtss_default_content()
         'footer' => array(
             'id'          => 'site-footer',
             'logo'        => 'assets/images/logo-footer.png',
-            'description' => 'EMSS provides mission-ready sovereign AI, C4ISR, and security systems for defense, government, and critical infrastructure sectors across the region.',
+            'description' => 'EMTSS provides mission-ready sovereign AI, C4ISR, and security systems for defense, government, and critical infrastructure sectors across the region.',
             'company'     => array('title' => 'Company', 'items' => array(
                 array('label' => 'Solutions', 'url' => '#solutions'),
                 array('label' => 'Ecosystem', 'url' => '#ecosystem'),
@@ -200,13 +200,13 @@ function emtss_default_content()
                 array('label' => 'bd@emergingtech.com', 'url' => 'mailto:bd@emergingtech.com'),
                 array('label' => '+966 11 XXX XXXX', 'url' => 'tel:+96611XXXXXXX'),
             )),
-            'copyright'   => '(C) 2026 EMERGING TECHNOLOGIES (EMSS). ALL RIGHTS RESERVED.',
+            'copyright'   => '(C) 2026 EMERGING TECHNOLOGIES (EMTSS). ALL RIGHTS RESERVED.',
             'locations'   => 'RIYADH - DOHA - KUWAIT CITY',
         ),
         'not_found' => array(
             'eyebrow'       => '404',
             'title'         => 'Signal lost',
-            'subtitle'      => 'The page you requested is not available or has moved. Return to command center or contact EMSS for support.',
+            'subtitle'      => 'The page you requested is not available or has moved. Return to command center or contact EMTSS for support.',
             'primary'       => 'Back to Home',
             'primary_url'   => '/',
             'secondary'     => 'Contact Us',
@@ -214,7 +214,7 @@ function emtss_default_content()
         ),
         'modal' => array(
             'briefing_title' => 'Request a Private Briefing',
-            'contact_title'  => 'Contact EMSS',
+            'contact_title'  => 'Contact EMTSS',
             'name'           => 'Full name',
             'email'          => 'Email',
             'phone'          => 'Phone',
@@ -228,12 +228,12 @@ function emtss_default_content()
             'phone_invalid'  => 'Please enter a valid phone number.',
         ),
         'thank_you_email' => array(
-            'subject'    => 'Thank you for contacting EMSS',
+            'subject'    => 'Thank you for contacting EMTSS',
             'title'      => 'Thank you for your request',
-            'message'    => 'We received your inquiry and our team will review the details shortly. An EMSS representative will contact you to discuss the best next step for your mission environment.',
-            'button'     => 'Visit EMSS Website',
+            'message'    => 'We received your inquiry and our team will review the details shortly. An EMTSS representative will contact you to discuss the best next step for your mission environment.',
+            'button'     => 'Visit EMTSS Website',
             'button_url' => '/',
-            'footer'     => 'EMSS - Sovereign by design. Mission ready.',
+            'footer'     => 'EMTSS - Sovereign by design. Mission ready.',
         ),
     );
 
@@ -266,10 +266,10 @@ function emtss_default_content()
             'id'         => 'home',
             'background' => 'assets/images/hero-bg.png',
             'logo'       => 'assets/images/logo-footer.png',
-            'eyebrow'    => 'EMSS // التقنيات الناشئة',
+            'eyebrow'    => 'EMTSS // التقنيات الناشئة',
             'title'      => "سيادة منذ التصميم.\nجاهزية للمهمة.",
             'kicker'     => 'قيادة متصلة. في أي مكان. في أي وقت.',
-            'body'       => 'تقدم EMSS حلول الذكاء الاصطناعي السيادي، وبنية C4ISR، وأمن الثقة الصفرية لقطاعات الدفاع والحكومة والبنية التحتية الحرجة، مع ربط الابتكار العالمي بأنظمة محلية مصممة لتفوق القرار.',
+            'body'       => 'تقدم EMTSS حلول الذكاء الاصطناعي السيادي، وبنية C4ISR، وأمن الثقة الصفرية لقطاعات الدفاع والحكومة والبنية التحتية الحرجة، مع ربط الابتكار العالمي بأنظمة محلية مصممة لتفوق القرار.',
             'primary'    => 'استكشف القدرات',
             'primary_url' => '#solutions',
             'secondary'  => 'اطلب إحاطة خاصة',
@@ -278,7 +278,7 @@ function emtss_default_content()
                 array('label' => 'المقر الرئيسي', 'value' => 'الرياض، السعودية', 'url' => ''),
                 array('label' => 'الحضور الإقليمي', 'value' => 'السعودية - قطر - الكويت', 'url' => ''),
                 array('label' => 'القطاع', 'value' => 'الدفاع والأمن', 'url' => ''),
-                array('label' => 'التواصل', 'value' => 'info@emss.net', 'url' => 'mailto:info@emss.net'),
+                array('label' => 'التواصل', 'value' => 'info@emtss.net', 'url' => 'mailto:info@emtss.net'),
             ),
         ),
         'mission' => array(
@@ -298,7 +298,7 @@ function emtss_default_content()
             'background' => 'assets/images/alert-hub-bg.png',
             'eyebrow'    => 'منصة ملكية فكرية خاصة',
             'title'      => 'تنبيه تشغيلي حرج، مبني للسيادة.',
-            'subtitle'   => 'Alert Hub منصة EMSS عربية أولا ومدعومة بالذكاء الاصطناعي لإدارة التنبيهات والحوادث التشغيلية، ومصممة منذ اليوم الأول لسيادة البيانات داخل المملكة.',
+            'subtitle'   => 'Alert Hub منصة EMTSS عربية أولا ومدعومة بالذكاء الاصطناعي لإدارة التنبيهات والحوادث التشغيلية، ومصممة منذ اليوم الأول لسيادة البيانات داخل المملكة.',
             'button'     => 'اطلع على شركاء النشر',
             'button_url' => '#partners',
             'features'   => array(
@@ -314,7 +314,7 @@ function emtss_default_content()
         ),
         'domains' => array(
             'id'       => 'ecosystem',
-            'eyebrow'  => 'منظومة قدرات EMSS',
+            'eyebrow'  => 'منظومة قدرات EMTSS',
             'title'    => 'خمسة مجالات أساسية مصممة للغرض',
             'subtitle' => 'قدرات تطبيقية متكاملة عبر القيادة والاستخبارات والاستقلالية والأمن السيبراني والاستجابة للطوارئ.',
             'cards'    => array(
@@ -329,7 +329,7 @@ function emtss_default_content()
             'id'       => 'field',
             'eyebrow'  => 'الأثر التشغيلي',
             'title'    => 'منتشرة في الميدان',
-            'subtitle' => 'نتائج من أربعة نماذج تمثيلية لنشر حلول EMSS',
+            'subtitle' => 'نتائج من أربعة نماذج تمثيلية لنشر حلول EMTSS',
             'cards'    => array(
                 array('title' => 'C4ISR متعدد المجالات', 'body' => 'وفرت وعيا موقفيا فوريا، وسرعت دورات القرار، ومكنت البحث والتحليل الاستخباراتي بمساعدة الذكاء الاصطناعي.', 'image' => 'assets/images/field-c4isr.png', 'url' => ''),
                 array('title' => 'الهوية البيومترية', 'body' => 'قللت صعوبات المصادقة، وأزالت مخاطر كلمات المرور، وأمنت الوصول للمنصات عالية الحساسية.', 'image' => 'assets/images/field-biometric.png', 'url' => ''),
@@ -365,15 +365,15 @@ function emtss_default_content()
             'id'       => 'contact',
             'eyebrow'  => 'نشر ملائم للمهمة',
             'title'    => 'اجلب القيادة السيادية إلى عمليتك.',
-            'subtitle' => 'احجز إحاطة خاصة مع EMSS لمواءمة قدراتنا مع بيئة مهمتك وقيود الاتصال ومسار التوريد.',
+            'subtitle' => 'احجز إحاطة خاصة مع EMTSS لمواءمة قدراتنا مع بيئة مهمتك وقيود الاتصال ومسار التوريد.',
             'button'   => 'اطلب إحاطة خاصة',
             'button_url' => '',
             'contact_button' => 'تواصل معنا',
             'contact_button_url' => '',
         ),
         'why' => array(
-            'id'       => 'why-emss',
-            'eyebrow'  => 'لماذا EMSS',
+            'id'       => 'why-emtss',
+            'eyebrow'  => 'لماذا EMTSS',
             'title'    => 'مبنية لطرفي المهمة',
             'columns'  => array(
                 array(
@@ -399,7 +399,7 @@ function emtss_default_content()
         'footer' => array(
             'id'          => 'site-footer',
             'logo'        => 'assets/images/logo-footer.png',
-            'description' => 'توفر EMSS أنظمة ذكاء اصطناعي سيادي و C4ISR وأمن جاهزة للمهمة لقطاعات الدفاع والحكومة والبنية التحتية الحرجة في المنطقة.',
+            'description' => 'توفر EMTSS أنظمة ذكاء اصطناعي سيادي و C4ISR وأمن جاهزة للمهمة لقطاعات الدفاع والحكومة والبنية التحتية الحرجة في المنطقة.',
             'company'     => array('title' => 'الشركة', 'items' => array(
                 array('label' => 'الحلول', 'url' => '#solutions'),
                 array('label' => 'المنظومة', 'url' => '#ecosystem'),
@@ -410,13 +410,13 @@ function emtss_default_content()
                 array('label' => 'bd@emergingtech.com', 'url' => 'mailto:bd@emergingtech.com'),
                 array('label' => '+966 11 XXX XXXX', 'url' => 'tel:+96611XXXXXXX'),
             )),
-            'copyright'   => '(C) 2026 EMERGING TECHNOLOGIES (EMSS). جميع الحقوق محفوظة.',
+            'copyright'   => '(C) 2026 EMERGING TECHNOLOGIES (EMTSS). جميع الحقوق محفوظة.',
             'locations'   => 'الرياض - الدوحة - مدينة الكويت',
         ),
         'not_found' => array(
             'eyebrow'       => '404',
             'title'         => 'انقطع الاتصال',
-            'subtitle'      => 'الصفحة المطلوبة غير متاحة أو تم نقلها. عد إلى الصفحة الرئيسية أو تواصل مع EMSS للدعم.',
+            'subtitle'      => 'الصفحة المطلوبة غير متاحة أو تم نقلها. عد إلى الصفحة الرئيسية أو تواصل مع EMTSS للدعم.',
             'primary'       => 'العودة للرئيسية',
             'primary_url'   => '/',
             'secondary'     => 'تواصل معنا',
@@ -424,7 +424,7 @@ function emtss_default_content()
         ),
         'modal' => array(
             'briefing_title' => 'طلب إحاطة خاصة',
-            'contact_title'  => 'تواصل مع EMSS',
+            'contact_title'  => 'تواصل مع EMTSS',
             'name'           => 'الاسم الكامل',
             'email'          => 'البريد الإلكتروني',
             'phone'          => 'الهاتف',
@@ -438,12 +438,12 @@ function emtss_default_content()
             'phone_invalid'  => 'يرجى إدخال رقم هاتف صحيح.',
         ),
         'thank_you_email' => array(
-            'subject'    => 'شكرا لتواصلك مع EMSS',
+            'subject'    => 'شكرا لتواصلك مع EMTSS',
             'title'      => 'شكرا لطلبك',
-            'message'    => 'استلمنا طلبك وسيقوم فريقنا بمراجعة التفاصيل قريبا. سيتواصل معك ممثل من EMSS لمناقشة الخطوة الأنسب لبيئة مهمتك.',
-            'button'     => 'زيارة موقع EMSS',
+            'message'    => 'استلمنا طلبك وسيقوم فريقنا بمراجعة التفاصيل قريبا. سيتواصل معك ممثل من EMTSS لمناقشة الخطوة الأنسب لبيئة مهمتك.',
+            'button'     => 'زيارة موقع EMTSS',
             'button_url' => '/',
-            'footer'     => 'EMSS - سيادة منذ التصميم. جاهزية للمهمة.',
+            'footer'     => 'EMTSS - سيادة منذ التصميم. جاهزية للمهمة.',
         ),
     );
 
@@ -456,12 +456,53 @@ function emtss_default_options()
         'settings' => array(
             'section_layout' => emtss_default_section_layout(),
             'lead_recipient' => get_option('admin_email'),
-            'from_name'      => 'EMSS',
+            'from_name'      => 'EMTSS',
             'from_email'     => get_option('admin_email'),
         ),
         'content'  => emtss_default_content(),
     );
 }
+
+function emtss_replace_legacy_brand_text($value)
+{
+    if (is_array($value)) {
+        foreach ($value as $key => $child) {
+            $value[$key] = emtss_replace_legacy_brand_text($child);
+        }
+
+        return $value;
+    }
+
+    if (!is_string($value)) {
+        return $value;
+    }
+
+    return str_replace(
+        array('EM' . 'SS', 'em' . 'ss.net', 'why-em' . 'ss'),
+        array('EMTSS', 'emtss.net', 'why-emtss'),
+        $value
+    );
+}
+
+function emtss_migrate_legacy_brand_text()
+{
+    if (get_option('emtss_brand_text_migrated_to_emtss')) {
+        return;
+    }
+
+    $saved = get_option('emtss_theme_options', array());
+
+    if (is_array($saved) && $saved !== array()) {
+        $migrated = emtss_replace_legacy_brand_text($saved);
+
+        if ($migrated !== $saved) {
+            update_option('emtss_theme_options', $migrated);
+        }
+    }
+
+    update_option('emtss_brand_text_migrated_to_emtss', 1, false);
+}
+add_action('init', 'emtss_migrate_legacy_brand_text');
 
 function emtss_is_list_array($array)
 {
@@ -714,14 +755,15 @@ function emtss_polylang_switcher()
         return;
     }
     ?>
-    <div class="emtss-lang-switcher" aria-label="<?php esc_attr_e('Language switcher', 'emtss'); ?>">
-        <?php foreach ($languages as $language) : ?>
-            <a class="<?php echo !empty($language['current_lang']) ? 'is-active' : ''; ?>" href="<?php echo esc_url($language['url']); ?>" lang="<?php echo esc_attr($language['slug']); ?>">
-                <?php echo esc_html(strtoupper($language['slug'])); ?>
-            </a>
-        <?php endforeach; ?>
-    </div>
-    <?php
+<div class="emtss-lang-switcher" aria-label="<?php esc_attr_e('Language switcher', 'emtss'); ?>">
+    <?php foreach ($languages as $language) : ?>
+    <a class="<?php echo !empty($language['current_lang']) ? 'is-active' : ''; ?>"
+        href="<?php echo esc_url($language['url']); ?>" lang="<?php echo esc_attr($language['slug']); ?>">
+        <?php echo esc_html(strtoupper($language['slug'])); ?>
+    </a>
+    <?php endforeach; ?>
+</div>
+<?php
 }
 
 function emtss_section_intro($section, $light = false, $center = false)
@@ -734,27 +776,28 @@ function emtss_section_intro($section, $light = false, $center = false)
         $classes[] = 'text-center mx-auto';
     }
     ?>
-    <div class="<?php echo esc_attr(implode(' ', $classes)); ?>">
-        <?php if (!empty($section['eyebrow'])) : ?>
-            <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow']); ?></p>
-        <?php endif; ?>
-        <?php if (!empty($section['title'])) : ?>
-            <h2><?php echo emtss_format_text($section['title']); ?></h2>
-        <?php endif; ?>
-        <?php if (!empty($section['subtitle'])) : ?>
-            <p class="emtss-section-subtitle"><?php echo emtss_format_text($section['subtitle']); ?></p>
-        <?php endif; ?>
-    </div>
-    <?php
+<div class="<?php echo esc_attr(implode(' ', $classes)); ?>">
+    <?php if (!empty($section['eyebrow'])) : ?>
+    <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow']); ?></p>
+    <?php endif; ?>
+    <?php if (!empty($section['title'])) : ?>
+    <h2><?php echo emtss_format_text($section['title']); ?></h2>
+    <?php endif; ?>
+    <?php if (!empty($section['subtitle'])) : ?>
+    <p class="emtss-section-subtitle"><?php echo emtss_format_text($section['subtitle']); ?></p>
+    <?php endif; ?>
+</div>
+<?php
 }
 
 function emtss_modal_button($label, $type = 'briefing', $classes = 'emtss-btn emtss-btn-primary')
 {
     ?>
-    <button type="button" class="btn <?php echo esc_attr($classes); ?> emtss-open-inquiry" data-bs-toggle="modal" data-bs-target="#emtssInquiryModal" data-inquiry-type="<?php echo esc_attr($type); ?>">
-        <?php echo esc_html($label); ?>
-    </button>
-    <?php
+<button type="button" class="btn <?php echo esc_attr($classes); ?> emtss-open-inquiry" data-bs-toggle="modal"
+    data-bs-target="#emtssInquiryModal" data-inquiry-type="<?php echo esc_attr($type); ?>">
+    <?php echo esc_html($label); ?>
+</button>
+<?php
 }
 
 function emtss_link_or_modal_button($label, $url = '', $type = 'briefing', $classes = 'emtss-btn emtss-btn-primary')
@@ -763,10 +806,10 @@ function emtss_link_or_modal_button($label, $url = '', $type = 'briefing', $clas
 
     if ($url !== '') {
         ?>
-        <a class="btn <?php echo esc_attr($classes); ?>" href="<?php echo esc_url($url); ?>">
-            <?php echo esc_html($label); ?>
-        </a>
-        <?php
+<a class="btn <?php echo esc_attr($classes); ?>" href="<?php echo esc_url($url); ?>">
+    <?php echo esc_html($label); ?>
+</a>
+<?php
         return;
     }
 
@@ -778,40 +821,43 @@ function emtss_render_hero()
     $section = emtss_get_content_section('hero');
     ob_start();
     ?>
-    <section class="emtss-hero" id="<?php echo esc_attr($section['id'] ?? 'home'); ?>" style="--emtss-bg: url('<?php echo esc_url(emtss_asset_url($section['background'] ?? '')); ?>');">
-        <div class="emtss-hero-overlay"></div>
-        <div class="container-xl">
-            <div class="emtss-hero-content">
-                <?php if (!empty($section['logo'])) : ?>
-                    <img class="emtss-hero-mark" src="<?php echo esc_url(emtss_asset_url($section['logo'])); ?>" alt="EMSS">
-                <?php endif; ?>
-                <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow'] ?? ''); ?></p>
-                <h1><?php echo emtss_format_text($section['title'] ?? ''); ?></h1>
-                <p class="emtss-hero-kicker"><?php echo esc_html($section['kicker'] ?? ''); ?></p>
-                <p class="emtss-hero-body"><?php echo emtss_format_text($section['body'] ?? ''); ?></p>
-                <div class="emtss-hero-actions">
-                    <a class="btn emtss-btn emtss-btn-gold" href="<?php echo esc_url(emtss_normalize_link_url($section['primary_url'] ?? '#solutions')); ?>"><?php echo esc_html($section['primary'] ?? ''); ?></a>
-                    <?php emtss_link_or_modal_button($section['secondary'] ?? __('Request a Private Briefing', 'emtss'), $section['secondary_url'] ?? '', 'briefing', 'emtss-btn emtss-btn-outline'); ?>
-                </div>
-                <?php if (!empty($section['stats']) && is_array($section['stats'])) : ?>
-                    <div class="emtss-hero-stats">
-                        <?php foreach ($section['stats'] as $stat) : ?>
-                            <div>
-                                <span><?php echo esc_html($stat['label'] ?? ''); ?></span>
-                                <?php $stat_url = emtss_normalize_link_url($stat['url'] ?? ''); ?>
-                                <?php if ($stat_url) : ?>
-                                    <a class="emtss-stat-link" href="<?php echo esc_url($stat_url); ?>"><?php echo esc_html($stat['value'] ?? ''); ?></a>
-                                <?php else : ?>
-                                    <strong><?php echo esc_html($stat['value'] ?? ''); ?></strong>
-                                <?php endif; ?>
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
-                <?php endif; ?>
+<section class="emtss-hero" id="<?php echo esc_attr($section['id'] ?? 'home'); ?>"
+    style="--emtss-bg: url('<?php echo esc_url(emtss_asset_url($section['background'] ?? '')); ?>');">
+    <div class="emtss-hero-overlay"></div>
+    <div class="container-xl">
+        <div class="emtss-hero-content">
+            <?php if (!empty($section['logo'])) : ?>
+            <img class="emtss-hero-mark" src="<?php echo esc_url(emtss_asset_url($section['logo'])); ?>" alt="EMTSS">
+            <?php endif; ?>
+            <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow'] ?? ''); ?></p>
+            <h1><?php echo emtss_format_text($section['title'] ?? ''); ?></h1>
+            <p class="emtss-hero-kicker"><?php echo esc_html($section['kicker'] ?? ''); ?></p>
+            <p class="emtss-hero-body"><?php echo emtss_format_text($section['body'] ?? ''); ?></p>
+            <div class="emtss-hero-actions">
+                <a class="btn emtss-btn emtss-btn-gold"
+                    href="<?php echo esc_url(emtss_normalize_link_url($section['primary_url'] ?? '#solutions')); ?>"><?php echo esc_html($section['primary'] ?? ''); ?></a>
+                <?php emtss_link_or_modal_button($section['secondary'] ?? __('Request a Private Briefing', 'emtss'), $section['secondary_url'] ?? '', 'briefing', 'emtss-btn emtss-btn-outline'); ?>
             </div>
+            <?php if (!empty($section['stats']) && is_array($section['stats'])) : ?>
+            <div class="emtss-hero-stats">
+                <?php foreach ($section['stats'] as $stat) : ?>
+                <div>
+                    <span><?php echo esc_html($stat['label'] ?? ''); ?></span>
+                    <?php $stat_url = emtss_normalize_link_url($stat['url'] ?? ''); ?>
+                    <?php if ($stat_url) : ?>
+                    <a class="emtss-stat-link"
+                        href="<?php echo esc_url($stat_url); ?>"><?php echo esc_html($stat['value'] ?? ''); ?></a>
+                    <?php else : ?>
+                    <strong><?php echo esc_html($stat['value'] ?? ''); ?></strong>
+                    <?php endif; ?>
+                </div>
+                <?php endforeach; ?>
+            </div>
+            <?php endif; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -820,26 +866,29 @@ function emtss_render_mission()
     $section = emtss_get_content_section('mission');
     ob_start();
     ?>
-    <section class="emtss-section emtss-mission" id="<?php echo esc_attr($section['id'] ?? 'solutions'); ?>">
-        <div class="container-xl">
-            <?php emtss_section_intro($section); ?>
-            <div class="emtss-card-grid emtss-card-grid-4">
-                <?php foreach (($section['cards'] ?? array()) as $card) : ?>
-                    <?php $card_url = emtss_normalize_link_url($card['url'] ?? ''); ?>
-                    <<?php echo $card_url ? 'a' : 'article'; ?> class="emtss-image-card <?php echo $card_url ? 'emtss-card-link' : ''; ?>" <?php echo $card_url ? 'href="' . esc_url($card_url) . '"' : ''; ?>>
-                        <div class="emtss-card-media">
-                            <img src="<?php echo esc_url(emtss_asset_url($card['image'] ?? '')); ?>" alt="<?php echo esc_attr($card['title'] ?? ''); ?>" loading="lazy">
-                        </div>
-                        <div class="emtss-card-body">
-                            <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
-                            <p><?php echo emtss_format_text($card['body'] ?? ''); ?></p>
-                        </div>
-                    </<?php echo $card_url ? 'a' : 'article'; ?>>
-                <?php endforeach; ?>
-            </div>
+<section class="emtss-section emtss-mission" id="<?php echo esc_attr($section['id'] ?? 'solutions'); ?>">
+    <div class="container-xl">
+        <?php emtss_section_intro($section); ?>
+        <div class="emtss-card-grid emtss-card-grid-4">
+            <?php foreach (($section['cards'] ?? array()) as $card) : ?>
+            <?php $card_url = emtss_normalize_link_url($card['url'] ?? ''); ?>
+            <<?php echo $card_url ? 'a' : 'article'; ?>
+                class="emtss-image-card <?php echo $card_url ? 'emtss-card-link' : ''; ?>"
+                <?php echo $card_url ? 'href="' . esc_url($card_url) . '"' : ''; ?>>
+                <div class="emtss-card-media">
+                    <img src="<?php echo esc_url(emtss_asset_url($card['image'] ?? '')); ?>"
+                        alt="<?php echo esc_attr($card['title'] ?? ''); ?>" loading="lazy">
+                </div>
+                <div class="emtss-card-body">
+                    <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
+                    <p><?php echo emtss_format_text($card['body'] ?? ''); ?></p>
+                </div>
+            </<?php echo $card_url ? 'a' : 'article'; ?>>
+            <?php endforeach; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -848,40 +897,43 @@ function emtss_render_alert_hub()
     $section = emtss_get_content_section('alert_hub');
     ob_start();
     ?>
-    <section class="emtss-section emtss-alert" id="<?php echo esc_attr($section['id'] ?? 'alert-hub'); ?>" style="--emtss-bg: url('<?php echo esc_url(emtss_asset_url($section['background'] ?? '')); ?>');">
-        <div class="emtss-alert-overlay"></div>
-        <div class="container-xl">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6">
-                    <div class="emtss-alert-copy">
-                        <span class="emtss-pill"><?php echo esc_html($section['eyebrow'] ?? ''); ?></span>
-                        <h2><?php echo emtss_format_text($section['title'] ?? ''); ?></h2>
-                        <p><?php echo emtss_format_text($section['subtitle'] ?? ''); ?></p>
-                        <ul class="emtss-check-list">
-                            <?php foreach (($section['features'] ?? array()) as $feature) : ?>
-                                <li><i class="bi bi-check2"></i><span><?php echo esc_html($feature); ?></span></li>
-                            <?php endforeach; ?>
-                        </ul>
-                        <a class="btn emtss-btn emtss-btn-dark" href="<?php echo esc_url(emtss_normalize_link_url($section['button_url'] ?? '#partners')); ?>"><?php echo esc_html($section['button'] ?? ''); ?></a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="emtss-figure-grid">
-                        <?php foreach (($section['figures'] ?? array()) as $figure) : ?>
-                            <figure>
-                                <?php $figure_url = emtss_normalize_link_url($figure['url'] ?? ''); ?>
-                                <?php if ($figure_url) : ?><a href="<?php echo esc_url($figure_url); ?>"><?php endif; ?>
-                                <img src="<?php echo esc_url(emtss_asset_url($figure['image'] ?? '')); ?>" alt="<?php echo esc_attr($figure['title'] ?? ''); ?>" loading="lazy">
-                                <?php if ($figure_url) : ?></a><?php endif; ?>
-                                <figcaption><?php echo esc_html($figure['title'] ?? ''); ?></figcaption>
-                            </figure>
+<section class="emtss-section emtss-alert" id="<?php echo esc_attr($section['id'] ?? 'alert-hub'); ?>"
+    style="--emtss-bg: url('<?php echo esc_url(emtss_asset_url($section['background'] ?? '')); ?>');">
+    <div class="emtss-alert-overlay"></div>
+    <div class="container-xl">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+                <div class="emtss-alert-copy">
+                    <span class="emtss-pill"><?php echo esc_html($section['eyebrow'] ?? ''); ?></span>
+                    <h2><?php echo emtss_format_text($section['title'] ?? ''); ?></h2>
+                    <p><?php echo emtss_format_text($section['subtitle'] ?? ''); ?></p>
+                    <ul class="emtss-check-list">
+                        <?php foreach (($section['features'] ?? array()) as $feature) : ?>
+                        <li><i class="bi bi-check2"></i><span><?php echo esc_html($feature); ?></span></li>
                         <?php endforeach; ?>
-                    </div>
+                    </ul>
+                    <a class="btn emtss-btn emtss-btn-dark"
+                        href="<?php echo esc_url(emtss_normalize_link_url($section['button_url'] ?? '#partners')); ?>"><?php echo esc_html($section['button'] ?? ''); ?></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="emtss-figure-grid">
+                    <?php foreach (($section['figures'] ?? array()) as $figure) : ?>
+                    <figure>
+                        <?php $figure_url = emtss_normalize_link_url($figure['url'] ?? ''); ?>
+                        <?php if ($figure_url) : ?><a href="<?php echo esc_url($figure_url); ?>"><?php endif; ?>
+                            <img src="<?php echo esc_url(emtss_asset_url($figure['image'] ?? '')); ?>"
+                                alt="<?php echo esc_attr($figure['title'] ?? ''); ?>" loading="lazy">
+                            <?php if ($figure_url) : ?></a><?php endif; ?>
+                        <figcaption><?php echo esc_html($figure['title'] ?? ''); ?></figcaption>
+                    </figure>
+                    <?php endforeach; ?>
                 </div>
             </div>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -890,22 +942,25 @@ function emtss_render_domains()
     $section = emtss_get_content_section('domains');
     ob_start();
     ?>
-    <section class="emtss-section emtss-domains" id="<?php echo esc_attr($section['id'] ?? 'ecosystem'); ?>">
-        <div class="container-xl">
-            <?php emtss_section_intro($section); ?>
-            <div class="emtss-domain-grid">
-                <?php foreach (($section['cards'] ?? array()) as $card) : ?>
-                    <?php $card_url = emtss_normalize_link_url($card['url'] ?? ''); ?>
-                    <<?php echo $card_url ? 'a' : 'article'; ?> class="emtss-domain-card <?php echo $card_url ? 'emtss-card-link' : ''; ?>" <?php echo $card_url ? 'href="' . esc_url($card_url) . '"' : ''; ?>>
-                        <img src="<?php echo esc_url(emtss_asset_url($card['icon'] ?? '')); ?>" alt="" aria-hidden="true" loading="lazy">
-                        <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
-                        <p><?php echo esc_html($card['body'] ?? ''); ?></p>
-                    </<?php echo $card_url ? 'a' : 'article'; ?>>
-                <?php endforeach; ?>
-            </div>
+<section class="emtss-section emtss-domains" id="<?php echo esc_attr($section['id'] ?? 'ecosystem'); ?>">
+    <div class="container-xl">
+        <?php emtss_section_intro($section); ?>
+        <div class="emtss-domain-grid">
+            <?php foreach (($section['cards'] ?? array()) as $card) : ?>
+            <?php $card_url = emtss_normalize_link_url($card['url'] ?? ''); ?>
+            <<?php echo $card_url ? 'a' : 'article'; ?>
+                class="emtss-domain-card <?php echo $card_url ? 'emtss-card-link' : ''; ?>"
+                <?php echo $card_url ? 'href="' . esc_url($card_url) . '"' : ''; ?>>
+                <img src="<?php echo esc_url(emtss_asset_url($card['icon'] ?? '')); ?>" alt="" aria-hidden="true"
+                    loading="lazy">
+                <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
+                <p><?php echo esc_html($card['body'] ?? ''); ?></p>
+            </<?php echo $card_url ? 'a' : 'article'; ?>>
+            <?php endforeach; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -914,24 +969,27 @@ function emtss_render_field()
     $section = emtss_get_content_section('field');
     ob_start();
     ?>
-    <section class="emtss-section emtss-field" id="<?php echo esc_attr($section['id'] ?? 'field'); ?>">
-        <div class="container-xl">
-            <?php emtss_section_intro($section, true, true); ?>
-            <div class="emtss-card-grid emtss-card-grid-4">
-                <?php foreach (($section['cards'] ?? array()) as $card) : ?>
-                    <?php $card_url = emtss_normalize_link_url($card['url'] ?? ''); ?>
-                    <<?php echo $card_url ? 'a' : 'article'; ?> class="emtss-field-card <?php echo $card_url ? 'emtss-card-link' : ''; ?>" <?php echo $card_url ? 'href="' . esc_url($card_url) . '"' : ''; ?>>
-                        <img src="<?php echo esc_url(emtss_asset_url($card['image'] ?? '')); ?>" alt="<?php echo esc_attr($card['title'] ?? ''); ?>" loading="lazy">
-                        <div>
-                            <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
-                            <p><?php echo esc_html($card['body'] ?? ''); ?></p>
-                        </div>
-                    </<?php echo $card_url ? 'a' : 'article'; ?>>
-                <?php endforeach; ?>
-            </div>
+<section class="emtss-section emtss-field" id="<?php echo esc_attr($section['id'] ?? 'field'); ?>">
+    <div class="container-xl">
+        <?php emtss_section_intro($section, true, true); ?>
+        <div class="emtss-card-grid emtss-card-grid-4">
+            <?php foreach (($section['cards'] ?? array()) as $card) : ?>
+            <?php $card_url = emtss_normalize_link_url($card['url'] ?? ''); ?>
+            <<?php echo $card_url ? 'a' : 'article'; ?>
+                class="emtss-field-card <?php echo $card_url ? 'emtss-card-link' : ''; ?>"
+                <?php echo $card_url ? 'href="' . esc_url($card_url) . '"' : ''; ?>>
+                <img src="<?php echo esc_url(emtss_asset_url($card['image'] ?? '')); ?>"
+                    alt="<?php echo esc_attr($card['title'] ?? ''); ?>" loading="lazy">
+                <div>
+                    <h3><?php echo esc_html($card['title'] ?? ''); ?></h3>
+                    <p><?php echo esc_html($card['body'] ?? ''); ?></p>
+                </div>
+            </<?php echo $card_url ? 'a' : 'article'; ?>>
+            <?php endforeach; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -940,21 +998,23 @@ function emtss_render_standards()
     $section = emtss_get_content_section('standards');
     ob_start();
     ?>
-    <section class="emtss-section emtss-standards" id="<?php echo esc_attr($section['id'] ?? 'standards'); ?>">
-        <div class="container-xl">
-            <?php emtss_section_intro($section); ?>
-            <div class="emtss-standard-grid">
-                <?php foreach (($section['items'] ?? array()) as $item) : ?>
-                    <?php $item_url = emtss_normalize_link_url($item['url'] ?? ''); ?>
-                    <<?php echo $item_url ? 'a' : 'article'; ?> class="<?php echo $item_url ? 'emtss-card-link' : ''; ?>" <?php echo $item_url ? 'href="' . esc_url($item_url) . '"' : ''; ?>>
-                        <img src="<?php echo esc_url(emtss_asset_url($item['icon'] ?? '')); ?>" alt="" aria-hidden="true" loading="lazy">
-                        <h3><?php echo esc_html($item['title'] ?? ''); ?></h3>
-                    </<?php echo $item_url ? 'a' : 'article'; ?>>
-                <?php endforeach; ?>
-            </div>
+<section class="emtss-section emtss-standards" id="<?php echo esc_attr($section['id'] ?? 'standards'); ?>">
+    <div class="container-xl">
+        <?php emtss_section_intro($section); ?>
+        <div class="emtss-standard-grid">
+            <?php foreach (($section['items'] ?? array()) as $item) : ?>
+            <?php $item_url = emtss_normalize_link_url($item['url'] ?? ''); ?>
+            <<?php echo $item_url ? 'a' : 'article'; ?> class="<?php echo $item_url ? 'emtss-card-link' : ''; ?>"
+                <?php echo $item_url ? 'href="' . esc_url($item_url) . '"' : ''; ?>>
+                <img src="<?php echo esc_url(emtss_asset_url($item['icon'] ?? '')); ?>" alt="" aria-hidden="true"
+                    loading="lazy">
+                <h3><?php echo esc_html($item['title'] ?? ''); ?></h3>
+            </<?php echo $item_url ? 'a' : 'article'; ?>>
+            <?php endforeach; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -963,24 +1023,27 @@ function emtss_render_partners()
     $section = emtss_get_content_section('partners');
     ob_start();
     ?>
-    <section class="emtss-section emtss-partners" id="<?php echo esc_attr($section['id'] ?? 'partners'); ?>">
-        <div class="container-xl">
-            <?php emtss_section_intro($section); ?>
-            <div class="emtss-partner-grid">
-                <?php foreach (($section['items'] ?? array()) as $item) : ?>
-                    <?php $partner_url = emtss_normalize_link_url($item['url'] ?? ''); ?>
-                    <<?php echo $partner_url ? 'a' : 'article'; ?> class="emtss-partner-card <?php echo $partner_url ? 'emtss-card-link' : ''; ?>" <?php echo $partner_url ? 'href="' . esc_url($partner_url) . '"' : ''; ?>>
-                        <div class="emtss-partner-logo">
-                            <img src="<?php echo esc_url(emtss_asset_url($item['logo'] ?? '')); ?>" alt="<?php echo esc_attr($item['title'] ?? ''); ?>" loading="lazy">
-                        </div>
-                        <p><?php echo esc_html($item['title'] ?? ''); ?></p>
-                        <span><?php echo esc_html($item['country'] ?? ''); ?></span>
-                    </<?php echo $partner_url ? 'a' : 'article'; ?>>
-                <?php endforeach; ?>
-            </div>
+<section class="emtss-section emtss-partners" id="<?php echo esc_attr($section['id'] ?? 'partners'); ?>">
+    <div class="container-xl">
+        <?php emtss_section_intro($section); ?>
+        <div class="emtss-partner-grid">
+            <?php foreach (($section['items'] ?? array()) as $item) : ?>
+            <?php $partner_url = emtss_normalize_link_url($item['url'] ?? ''); ?>
+            <<?php echo $partner_url ? 'a' : 'article'; ?>
+                class="emtss-partner-card <?php echo $partner_url ? 'emtss-card-link' : ''; ?>"
+                <?php echo $partner_url ? 'href="' . esc_url($partner_url) . '"' : ''; ?>>
+                <div class="emtss-partner-logo">
+                    <img src="<?php echo esc_url(emtss_asset_url($item['logo'] ?? '')); ?>"
+                        alt="<?php echo esc_attr($item['title'] ?? ''); ?>" loading="lazy">
+                </div>
+                <p><?php echo esc_html($item['title'] ?? ''); ?></p>
+                <span><?php echo esc_html($item['country'] ?? ''); ?></span>
+            </<?php echo $partner_url ? 'a' : 'article'; ?>>
+            <?php endforeach; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -989,20 +1052,20 @@ function emtss_render_cta()
     $section = emtss_get_content_section('cta');
     ob_start();
     ?>
-    <section class="emtss-cta" id="<?php echo esc_attr($section['id'] ?? 'contact'); ?>">
-        <div class="container-xl">
-            <div class="emtss-cta-inner">
-                <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow'] ?? ''); ?></p>
-                <h2><?php echo esc_html($section['title'] ?? ''); ?></h2>
-                <p><?php echo emtss_format_text($section['subtitle'] ?? ''); ?></p>
-                <div class="emtss-cta-actions">
-                    <?php emtss_link_or_modal_button($section['button'] ?? __('Request a Private Briefing', 'emtss'), $section['button_url'] ?? '', 'briefing', 'emtss-btn emtss-btn-gold'); ?>
-                    <?php emtss_link_or_modal_button($section['contact_button'] ?? __('Contact Us', 'emtss'), $section['contact_button_url'] ?? '', 'contact', 'emtss-btn emtss-btn-outline'); ?>
-                </div>
+<section class="emtss-cta" id="<?php echo esc_attr($section['id'] ?? 'contact'); ?>">
+    <div class="container-xl">
+        <div class="emtss-cta-inner">
+            <p class="emtss-eyebrow"><?php echo esc_html($section['eyebrow'] ?? ''); ?></p>
+            <h2><?php echo esc_html($section['title'] ?? ''); ?></h2>
+            <p><?php echo emtss_format_text($section['subtitle'] ?? ''); ?></p>
+            <div class="emtss-cta-actions">
+                <?php emtss_link_or_modal_button($section['button'] ?? __('Request a Private Briefing', 'emtss'), $section['button_url'] ?? '', 'briefing', 'emtss-btn emtss-btn-gold'); ?>
+                <?php emtss_link_or_modal_button($section['contact_button'] ?? __('Contact Us', 'emtss'), $section['contact_button_url'] ?? '', 'contact', 'emtss-btn emtss-btn-outline'); ?>
             </div>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -1011,24 +1074,24 @@ function emtss_render_why()
     $section = emtss_get_content_section('why');
     ob_start();
     ?>
-    <section class="emtss-section emtss-why" id="<?php echo esc_attr($section['id'] ?? 'why-emss'); ?>">
-        <div class="container-xl">
-            <?php emtss_section_intro($section, true); ?>
-            <div class="row g-5">
-                <?php foreach (($section['columns'] ?? array()) as $column) : ?>
-                    <div class="col-lg-6">
-                        <h3><?php echo esc_html($column['title'] ?? ''); ?></h3>
-                        <ul class="emtss-bullet-list">
-                            <?php foreach (($column['items'] ?? array()) as $item) : ?>
-                                <li><span></span><?php echo esc_html($item); ?></li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                <?php endforeach; ?>
+<section class="emtss-section emtss-why" id="<?php echo esc_attr($section['id'] ?? 'why-emtss'); ?>">
+    <div class="container-xl">
+        <?php emtss_section_intro($section, true); ?>
+        <div class="row g-5">
+            <?php foreach (($section['columns'] ?? array()) as $column) : ?>
+            <div class="col-lg-6">
+                <h3><?php echo esc_html($column['title'] ?? ''); ?></h3>
+                <ul class="emtss-bullet-list">
+                    <?php foreach (($column['items'] ?? array()) as $item) : ?>
+                    <li><span></span><?php echo esc_html($item); ?></li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
+            <?php endforeach; ?>
         </div>
-    </section>
-    <?php
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 
@@ -1038,57 +1101,57 @@ function emtss_render_site_footer()
     $section = emtss_get_content_section('footer');
     ob_start();
     ?>
-    <section class="emtss-site-footer" id="<?php echo esc_attr($section['id'] ?? 'site-footer'); ?>">
-        <div class="container-xl">
-            <div class="emtss-footer-top">
-                <div class="emtss-footer-brand">
-                    <img src="<?php echo esc_url(emtss_asset_url($section['logo'] ?? '')); ?>" alt="EMSS" loading="lazy">
-                    <p><?php echo emtss_format_text($section['description'] ?? ''); ?></p>
-                </div>
-                <div>
-                    <h2><?php echo esc_html($section['company']['title'] ?? ''); ?></h2>
-                    <ul>
-                        <?php foreach (($section['company']['items'] ?? array()) as $item) : ?>
-                            <?php
-                            $label = is_array($item) ? ($item['label'] ?? '') : $item;
-                            $url   = is_array($item) ? emtss_normalize_link_url($item['url'] ?? '') : '';
-                            ?>
-                            <li>
-                                <?php if ($url) : ?>
-                                    <a href="<?php echo esc_url($url); ?>"><?php echo esc_html($label); ?></a>
-                                <?php else : ?>
-                                    <?php echo esc_html($label); ?>
-                                <?php endif; ?>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
-                <div>
-                    <h2><?php echo esc_html($section['contact']['title'] ?? ''); ?></h2>
-                    <ul>
-                        <?php foreach (($section['contact']['items'] ?? array()) as $item) : ?>
-                            <?php
-                            $label = is_array($item) ? ($item['label'] ?? '') : $item;
-                            $url   = is_array($item) ? emtss_normalize_link_url($item['url'] ?? '') : '';
-                            ?>
-                            <li>
-                                <?php if ($url) : ?>
-                                    <a href="<?php echo esc_url($url); ?>"><?php echo esc_html($label); ?></a>
-                                <?php else : ?>
-                                    <?php echo esc_html($label); ?>
-                                <?php endif; ?>
-                            </li>
-                        <?php endforeach; ?>
-                    </ul>
-                </div>
+<section class="emtss-site-footer" id="<?php echo esc_attr($section['id'] ?? 'site-footer'); ?>">
+    <div class="container-xl">
+        <div class="emtss-footer-top">
+            <div class="emtss-footer-brand">
+                <img src="<?php echo esc_url(emtss_asset_url($section['logo'] ?? '')); ?>" alt="EMTSS" loading="lazy">
+                <p><?php echo emtss_format_text($section['description'] ?? ''); ?></p>
             </div>
-            <div class="emtss-footer-bottom">
-                <p><?php echo esc_html($section['copyright'] ?? ''); ?></p>
-                <p><?php echo esc_html($section['locations'] ?? ''); ?></p>
+            <div>
+                <h2><?php echo esc_html($section['company']['title'] ?? ''); ?></h2>
+                <ul>
+                    <?php foreach (($section['company']['items'] ?? array()) as $item) : ?>
+                    <?php
+                            $label = is_array($item) ? ($item['label'] ?? '') : $item;
+                            $url   = is_array($item) ? emtss_normalize_link_url($item['url'] ?? '') : '';
+                            ?>
+                    <li>
+                        <?php if ($url) : ?>
+                        <a href="<?php echo esc_url($url); ?>"><?php echo esc_html($label); ?></a>
+                        <?php else : ?>
+                        <?php echo esc_html($label); ?>
+                        <?php endif; ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
+            </div>
+            <div>
+                <h2><?php echo esc_html($section['contact']['title'] ?? ''); ?></h2>
+                <ul>
+                    <?php foreach (($section['contact']['items'] ?? array()) as $item) : ?>
+                    <?php
+                            $label = is_array($item) ? ($item['label'] ?? '') : $item;
+                            $url   = is_array($item) ? emtss_normalize_link_url($item['url'] ?? '') : '';
+                            ?>
+                    <li>
+                        <?php if ($url) : ?>
+                        <a href="<?php echo esc_url($url); ?>"><?php echo esc_html($label); ?></a>
+                        <?php else : ?>
+                        <?php echo esc_html($label); ?>
+                        <?php endif; ?>
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
-    </section>
-    <?php
+        <div class="emtss-footer-bottom">
+            <p><?php echo esc_html($section['copyright'] ?? ''); ?></p>
+            <p><?php echo esc_html($section['locations'] ?? ''); ?></p>
+        </div>
+    </div>
+</section>
+<?php
     return ob_get_clean();
 }
 

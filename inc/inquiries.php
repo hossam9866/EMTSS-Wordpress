@@ -60,7 +60,7 @@ function emtss_email_shell($title, $body_html)
         . '<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="background:#f4f6f3;padding:28px 12px;"><tr><td align="center">'
         . '<table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:640px;background:#ffffff;border:1px solid #dee3e8;border-radius:10px;overflow:hidden;">'
         . '<tr><td style="height:6px;background:#d4a017;font-size:0;line-height:0;">&nbsp;</td></tr>'
-        . '<tr><td style="padding:24px 28px;border-bottom:1px solid #dee3e8;background:#ffffff;"><img src="' . esc_url($logo) . '" alt="EMSS" style="max-width:160px;height:auto;"></td></tr>'
+        . '<tr><td style="padding:24px 28px;border-bottom:1px solid #dee3e8;background:#ffffff;"><img src="' . esc_url($logo) . '" alt="EMTSS" style="max-width:160px;height:auto;"></td></tr>'
         . '<tr><td style="padding:28px;"><h1 style="margin:0 0 18px;font-family:Arial,sans-serif;font-size:28px;line-height:1.1;color:#445840;text-transform:uppercase;">' . esc_html($title) . '</h1>'
         . $body_html
         . '</td></tr></table></td></tr></table></body></html>';
@@ -115,7 +115,7 @@ function emtss_notify_admin_about_inquiry($post_id, $data)
         return false;
     }
 
-    $subject = sprintf('[EMSS] %s - %s', emtss_inquiry_type_label($data['type']), $data['name']);
+    $subject = sprintf('[EMTSS] %s - %s', emtss_inquiry_type_label($data['type']), $data['name']);
     $rows    = array(
         __('Name', 'emtss')         => $data['name'],
         __('Email', 'emtss')        => $data['email'],
@@ -150,7 +150,7 @@ function emtss_send_thank_you_email($post_id, $data)
     }
 
     $email_content = emtss_get_content_section('thank_you_email');
-    $subject       = emtss_apply_email_tokens($email_content['subject'] ?? __('Thank you for contacting EMSS', 'emtss'), $data);
+    $subject       = emtss_apply_email_tokens($email_content['subject'] ?? __('Thank you for contacting EMTSS', 'emtss'), $data);
     $title         = emtss_apply_email_tokens($email_content['title'] ?? __('Thank you for your request', 'emtss'), $data);
     $message       = emtss_apply_email_tokens($email_content['message'] ?? '', $data);
     $button        = emtss_apply_email_tokens($email_content['button'] ?? '', $data);
