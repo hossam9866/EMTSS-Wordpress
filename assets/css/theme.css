@@ -176,7 +176,7 @@ section[id] {
 
 .emtss-btn-gold:hover,
 .emtss-btn-gold:focus {
-  color: var(--emtss-deep);
+  /* color: var(--emtss-deep); */
   background: #e7b62d;
   border-color: #e7b62d;
 }
