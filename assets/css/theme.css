@@ -345,6 +345,7 @@ section[id] {
   font-family: "IBM Plex Mono", monospace;
   font-size: clamp(14px, 1.8vw, 20px);
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .emtss-hero-body {
