@@ -1,23 +1,23 @@
 :root {
-  --emtss-deep: #202b20;
-  --emtss-night: #192019;
-  --emtss-forest: #445840;
-  --emtss-gold: #d4a017;
-  --emtss-sage: #e4ecd8;
-  --emtss-muted: #8e9b84;
+  --emtss-deep: #071b30;
+  --emtss-night: #071b30;
+  --emtss-forest: #0b2a4a;
+  --emtss-gold: #d9591c;
+  --emtss-sage: #c7d6e3;
+  --emtss-muted: #71879c;
   --emtss-ink: #4a5a68;
   --emtss-border: #dee3e8;
-  --emtss-soft: #f5f7f3;
+  --emtss-soft: #f6f8fb;
   --emtss-white: #ffffff;
-  --emtss-media: #192019;
-  --emtss-olive: #6d7868;
-  --emtss-gold-hover: #e7b62d;
+  --emtss-media: #071b30;
+  --emtss-olive: #71879c;
+  --emtss-gold-hover: #f06a2a;
   --emtss-danger: #9c2f24;
-  --emtss-shadow: 0 10px 28px rgba(32, 43, 32, 0.08);
-  --emtss-shadow-hover: 0 16px 38px rgba(32, 43, 32, 0.14);
-  --emtss-shadow-figure: 0 14px 34px rgba(32, 43, 32, 0.14);
-  --emtss-shadow-modal: 0 24px 80px rgba(32, 43, 32, 0.24);
-  --emtss-shadow-dropdown: 0 18px 45px rgba(32, 43, 32, 0.18);
+  --emtss-shadow: 0 10px 28px rgba(11, 42, 74, 0.06);
+  --emtss-shadow-hover: 0 16px 38px rgba(11, 42, 74, 0.12);
+  --emtss-shadow-figure: 0 14px 34px rgba(11, 42, 74, 0.12);
+  --emtss-shadow-modal: 0 24px 80px rgba(11, 42, 74, 0.22);
+  --emtss-shadow-dropdown: 0 18px 45px rgba(11, 42, 74, 0.18);
 }
 
 *,
@@ -313,11 +313,11 @@ section[id] {
   inset: 0;
   background: linear-gradient(
       90deg,
-      rgba(20, 32, 26, 0.9) 0%,
-      rgba(28, 42, 33, 0.68) 42%,
-      rgba(28, 42, 33, 0.2) 100%
+      rgba(7, 27, 48, 0.9) 0%,
+      rgba(7, 27, 48, 0.68) 42%,
+      rgba(7, 27, 48, 0.2) 100%
     ),
-    rgba(32, 43, 32, 0.32);
+    rgba(7, 27, 48, 0.32);
 }
 
 .emtss-hero-content {
@@ -350,7 +350,7 @@ section[id] {
 .emtss-hero-body {
   max-width: 600px;
   margin: 18px 0 0;
-  color: rgba(228, 236, 216, 0.88);
+  color: rgba(199, 214, 227, 0.88);
   font-size: clamp(15px, 1.5vw, 17px);
   line-height: 1.7;
 }
@@ -374,7 +374,7 @@ section[id] {
 .emtss-hero-stats div {
   min-height: 78px;
   padding-inline-end: 18px;
-  border-inline-end: 1px solid rgba(228, 236, 216, 0.25);
+  border-inline-end: 1px solid rgba(199, 214, 227, 0.25);
 }
 
 .emtss-hero-stats div:last-child {
@@ -443,7 +443,7 @@ section[id] {
 .emtss-card-link:hover,
 .emtss-card-link:focus {
   color: inherit;
-  border-color: rgba(212, 160, 23, 0.42);
+  border-color: rgba(217, 89, 28, 0.42);
   box-shadow: var(--emtss-shadow-hover);
   transform: translateY(-2px);
 }
@@ -503,7 +503,7 @@ section[id] {
 .emtss-alert-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(32, 43, 32, 0.82);
+  background: rgba(7, 27, 48, 0.5);
 }
 
 .emtss-alert .container-xl {
@@ -618,7 +618,7 @@ section[id] {
   padding: 24px 20px;
   border: 1px solid var(--emtss-border);
   background: var(--emtss-white);
-  box-shadow: 0 8px 22px rgba(32, 43, 32, 0.06);
+  box-shadow: 0 8px 22px rgba(11, 42, 74, 0.06);
   overflow-wrap: break-word;
 }
 
@@ -642,7 +642,7 @@ section[id] {
   overflow: hidden;
   min-height: 362px;
   background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(228, 236, 216, 0.12);
+  border: 1px solid rgba(199, 214, 227, 0.12);
 }
 
 .emtss-field-card > img {
@@ -892,9 +892,9 @@ section[id] {
   color: var(--emtss-sage);
   background: linear-gradient(
       110deg,
-      rgba(25, 32, 25, 0.96) 0%,
-      rgba(68, 88, 64, 0.86) 58%,
-      rgba(32, 43, 32, 0.94) 100%
+      rgba(7, 27, 48, 0.96) 0%,
+      rgba(11, 42, 74, 0.86) 58%,
+      rgba(7, 27, 48, 0.94) 100%
     ),
     var(--emtss-deep);
   overflow: hidden;
@@ -905,10 +905,10 @@ section[id] {
   inset: 0;
   opacity: 0.26;
   background-image: linear-gradient(
-      rgba(228, 236, 216, 0.12) 1px,
+      rgba(199, 214, 227, 0.12) 1px,
       transparent 1px
     ),
-    linear-gradient(90deg, rgba(228, 236, 216, 0.12) 1px, transparent 1px);
+    linear-gradient(90deg, rgba(199, 214, 227, 0.12) 1px, transparent 1px);
   background-size: 58px 58px;
   -webkit-mask-image: linear-gradient(
     90deg,
@@ -951,7 +951,7 @@ section[id] {
 .emtss-not-found-copy {
   max-width: 620px;
   margin: 22px 0 0;
-  color: rgba(228, 236, 216, 0.9);
+  color: rgba(199, 214, 227, 0.9);
   font-size: clamp(16px, 1.6vw, 19px);
   line-height: 1.75;
 }
@@ -1144,7 +1144,7 @@ section[id] {
   }
 
   .emtss-hero-overlay {
-    background: rgba(20, 32, 26, 0.78);
+    background: rgba(7, 27, 48, 0.78);
   }
 
   .emtss-hero-stats {
@@ -1324,7 +1324,7 @@ section[id] {
     min-height: auto;
     padding: 0 0 14px;
     border-inline-end: 0;
-    border-bottom: 1px solid rgba(228, 236, 216, 0.25);
+    border-bottom: 1px solid rgba(199, 214, 227, 0.25);
   }
 
   .emtss-hero-stats div:last-child {
