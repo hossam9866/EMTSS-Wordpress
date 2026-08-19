@@ -8,7 +8,16 @@
   --emtss-ink: #4a5a68;
   --emtss-border: #dee3e8;
   --emtss-soft: #f5f7f3;
-  --emtss-shadow: 0 10px 28px rgba(11, 42, 74, 0.06);
+  --emtss-white: #ffffff;
+  --emtss-media: #192019;
+  --emtss-olive: #6d7868;
+  --emtss-gold-hover: #e7b62d;
+  --emtss-danger: #9c2f24;
+  --emtss-shadow: 0 10px 28px rgba(32, 43, 32, 0.08);
+  --emtss-shadow-hover: 0 16px 38px rgba(32, 43, 32, 0.14);
+  --emtss-shadow-figure: 0 14px 34px rgba(32, 43, 32, 0.14);
+  --emtss-shadow-modal: 0 24px 80px rgba(32, 43, 32, 0.24);
+  --emtss-shadow-dropdown: 0 18px 45px rgba(32, 43, 32, 0.18);
 }
 
 *,
@@ -28,7 +37,7 @@ body {
   overflow-x: hidden;
   color: var(--emtss-deep);
   font-family: "Inter", Arial, sans-serif;
-  background: #ffffff;
+  background: var(--emtss-white);
   text-rendering: optimizeLegibility;
 }
 
@@ -125,7 +134,7 @@ section[id] {
 }
 
 .emtss-lang-switcher a.is-active {
-  color: #ffffff;
+  color: var(--emtss-white);
   background: var(--emtss-forest);
 }
 
@@ -156,20 +165,20 @@ section[id] {
 }
 
 .emtss-btn-primary {
-  color: #ffffff;
+  color: var(--emtss-white);
   background: var(--emtss-forest);
   border-color: var(--emtss-forest);
 }
 
 .emtss-btn-primary:hover,
 .emtss-btn-primary:focus {
-  color: #ffffff;
+  color: var(--emtss-white);
   background: var(--emtss-deep);
   border-color: var(--emtss-deep);
 }
 
 .emtss-btn-gold {
-  color: #ffffff;
+  color: var(--emtss-white);
   background: var(--emtss-gold);
   border-color: var(--emtss-gold);
 }
@@ -177,12 +186,12 @@ section[id] {
 .emtss-btn-gold:hover,
 .emtss-btn-gold:focus {
   /* color: var(--emtss-deep); */
-  background: #e7b62d;
-  border-color: #e7b62d;
+  background: var(--emtss-gold-hover);
+  border-color: var(--emtss-gold-hover);
 }
 
 .emtss-btn-outline {
-  color: #ffffff;
+  color: var(--emtss-white);
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.38);
 }
@@ -190,20 +199,20 @@ section[id] {
 .emtss-btn-outline:hover,
 .emtss-btn-outline:focus {
   color: var(--emtss-deep);
-  background: #ffffff;
-  border-color: #ffffff;
+  background: var(--emtss-white);
+  border-color: var(--emtss-white);
 }
 
 .emtss-btn-dark,
 .emtss-btn-muted {
-  color: #ffffff;
+  color: var(--emtss-white);
   background: var(--emtss-deep);
   border-color: var(--emtss-deep);
 }
 
 .emtss-btn-muted {
-  background: #6d7868;
-  border-color: #6d7868;
+  background: var(--emtss-olive);
+  border-color: var(--emtss-olive);
 }
 
 .emtss-eyebrow {
@@ -295,8 +304,8 @@ section[id] {
   align-items: center;
   min-height: clamp(760px, 64vw, 974px);
   padding: 140px 0 76px;
-  color: #ffffff;
-  background: #0d1f20 var(--emtss-bg) center/cover no-repeat;
+  color: var(--emtss-white);
+  background: var(--emtss-night) var(--emtss-bg) center/cover no-repeat;
 }
 
 .emtss-hero-overlay {
@@ -325,7 +334,7 @@ section[id] {
 
 .emtss-hero h1 {
   max-width: 640px;
-  color: #ffffff;
+  color: var(--emtss-white);
   font-size: clamp(48px, 8vw, 92px);
   line-height: 0.95;
 }
@@ -383,7 +392,7 @@ section[id] {
 .emtss-hero-stats .emtss-stat-link {
   display: block;
   margin-top: 4px;
-  color: #ffffff;
+  color: var(--emtss-white);
   font-family: "Barlow Condensed", sans-serif;
   font-size: 18px;
   line-height: 1.2;
@@ -417,7 +426,7 @@ section[id] {
 .emtss-image-card {
   overflow: hidden;
   min-height: 314px;
-  background: #ffffff;
+  background: var(--emtss-white);
   border: 1px solid var(--emtss-border);
   box-shadow: var(--emtss-shadow);
 }
@@ -435,14 +444,14 @@ section[id] {
 .emtss-card-link:focus {
   color: inherit;
   border-color: rgba(212, 160, 23, 0.42);
-  box-shadow: 0 16px 38px rgba(11, 42, 74, 0.12);
+  box-shadow: var(--emtss-shadow-hover);
   transform: translateY(-2px);
 }
 
 .emtss-card-media {
   aspect-ratio: 1.77 / 1;
   min-height: 150px;
-  background: #071b30;
+  background: var(--emtss-media);
   overflow: hidden;
 }
 
@@ -572,7 +581,7 @@ section[id] {
   overflow: hidden;
   margin: 0;
   border-radius: 8px;
-  box-shadow: 0 14px 34px rgba(11, 42, 74, 0.12);
+  box-shadow: var(--emtss-shadow-figure);
 }
 
 .emtss-figure-grid img {
@@ -583,7 +592,7 @@ section[id] {
   min-height: 50px;
   padding: 12px 16px;
   color: var(--emtss-forest);
-  background: #ffffff;
+  background: var(--emtss-white);
   border: 1px solid var(--emtss-border);
   border-top: 0;
   font-family: "Barlow Condensed", sans-serif;
@@ -608,8 +617,8 @@ section[id] {
   min-height: 214px;
   padding: 24px 20px;
   border: 1px solid var(--emtss-border);
-  background: #ffffff;
-  box-shadow: 0 8px 22px rgba(11, 42, 74, 0.04);
+  background: var(--emtss-white);
+  box-shadow: 0 8px 22px rgba(32, 43, 32, 0.06);
   overflow-wrap: break-word;
 }
 
@@ -672,7 +681,7 @@ section[id] {
   min-height: 88px;
   padding: 16px;
   border: 1px solid var(--emtss-border);
-  background: #ffffff;
+  background: var(--emtss-white);
   text-align: center;
   overflow-wrap: break-word;
 }
@@ -699,7 +708,7 @@ section[id] {
 .emtss-partner-card {
   min-height: 172px;
   padding: 18px 14px;
-  background: #ffffff;
+  background: var(--emtss-white);
   border: 1px solid var(--emtss-border);
   text-align: center;
   overflow-wrap: break-word;
@@ -745,7 +754,7 @@ section[id] {
 }
 
 .emtss-cta h2 {
-  color: #ffffff;
+  color: var(--emtss-white);
 }
 
 .emtss-cta p:not(.emtss-eyebrow),
@@ -823,7 +832,7 @@ section[id] {
 }
 
 .emtss-site-footer h2 {
-  color: #ffffff;
+  color: var(--emtss-white);
   font: 700 11px/1.4 "IBM Plex Mono", monospace;
   text-transform: uppercase;
 }
@@ -930,7 +939,7 @@ section[id] {
 
 .emtss-not-found h1 {
   margin: 0;
-  color: #ffffff;
+  color: var(--emtss-white);
   font-family: "Barlow Condensed", Impact, sans-serif;
   font-size: clamp(58px, 11vw, 124px);
   font-weight: 700;
@@ -951,7 +960,7 @@ section[id] {
   overflow: hidden;
   border: 0;
   border-radius: 8px;
-  box-shadow: 0 24px 80px rgba(11, 42, 74, 0.22);
+  box-shadow: var(--emtss-shadow-modal);
 }
 
 .emtss-modal .modal-dialog {
@@ -1003,7 +1012,7 @@ section[id] {
   z-index: 1065;
   border-color: var(--emtss-border);
   border-radius: 6px;
-  box-shadow: 0 18px 45px rgba(11, 42, 74, 0.18);
+  box-shadow: var(--emtss-shadow-dropdown);
 }
 
 .emtss-modal .iti__country-list {
@@ -1039,7 +1048,7 @@ section[id] {
 }
 
 .emtss-form-response.is-error {
-  color: #9c2f24;
+  color: var(--emtss-danger);
 }
 
 [dir="rtl"] .emtss-check-list li,
