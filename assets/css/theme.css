@@ -88,6 +88,38 @@ section[id] {
   height: auto;
 }
 
+.emtss-logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  max-width: min(220px, 48vw);
+  margin-right: 0;
+  padding-block: 6px;
+  color: var(--emtss-forest);
+  text-decoration: none;
+}
+
+.emtss-logo-tagline {
+  display: block;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font: 600 9px/1.25 "IBM Plex Mono", "Inter", Arial, sans-serif;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+[dir="rtl"] .emtss-logo {
+  align-items: flex-end;
+}
+
+[dir="rtl"] .emtss-logo-tagline {
+  font-family: "Inter", Arial, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .emtss-menu {
   gap: clamp(14px, 2vw, 35px);
 }
@@ -1393,6 +1425,15 @@ section[id] {
   .emtss-logo img,
   .custom-logo {
     width: min(150px, 48vw);
+  }
+
+  .emtss-logo {
+    max-width: 52vw;
+  }
+
+  .emtss-logo-tagline {
+    font-size: 8px;
+    letter-spacing: 0.07em;
   }
 
   .emtss-btn {

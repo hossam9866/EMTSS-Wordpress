@@ -31,6 +31,7 @@ function emtss_default_content()
         'header' => array(
             'logo' => 'assets/images/logo-header.png',
             'logo_link' => '/',
+            'logo_tagline' => '',
             'cta'  => 'Request Briefing',
             'cta_url' => '',
             'nav'  => array(
@@ -241,6 +242,7 @@ function emtss_default_content()
         'header' => array(
             'logo' => 'assets/images/logo-header.png',
             'logo_link' => '/',
+            'logo_tagline' => '',
             'cta'  => 'طلب إحاطة',
             'cta_url' => '',
             'nav'  => array(

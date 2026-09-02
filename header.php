@@ -13,6 +13,7 @@ $header = emtss_get_content_section('header');
 $nav    = $header['nav'] ?? array();
 $links  = $header['links'] ?? array();
 $logo_link = emtss_normalize_link_url($header['logo_link'] ?? '/');
+$logo_tagline = trim(wp_strip_all_tags((string) ($header['logo_tagline'] ?? '')));
 $menu_items = $header['menu_items'] ?? array();
 
 if (!$menu_items) {
@@ -41,6 +42,9 @@ if (!$menu_items) {
                 <?php echo wp_get_attachment_image(get_theme_mod('custom_logo'), 'full', false, array('class' => 'custom-logo')); ?>
             <?php else : ?>
                 <img src="<?php echo esc_url(emtss_asset_url($header['logo'] ?? 'assets/images/logo-header.png')); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>">
+            <?php endif; ?>
+            <?php if ($logo_tagline !== '') : ?>
+                <span class="emtss-logo-tagline"><?php echo esc_html($logo_tagline); ?></span>
             <?php endif; ?>
         </a>
 
