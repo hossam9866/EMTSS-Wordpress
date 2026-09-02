@@ -460,6 +460,9 @@ function emtss_default_options()
             'lead_recipient' => get_option('admin_email'),
             'from_name'      => 'EMTSS',
             'from_email'     => get_option('admin_email'),
+            'logo_tagline_font_desktop' => '7',
+            'logo_tagline_font_tablet'  => '7',
+            'logo_tagline_font_mobile'  => '6',
         ),
         'content'  => emtss_default_content(),
     );

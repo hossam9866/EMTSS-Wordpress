@@ -296,3 +296,22 @@
         grid-template-columns: 1fr;
     }
 }
+.emtss-admin-size-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.emtss-admin-size-controls label {
+  display: grid;
+  gap: 5px;
+}
+
+.emtss-admin-size-controls label > span {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.emtss-admin-size-controls input {
+  width: 100%;
+}

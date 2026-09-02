@@ -334,6 +334,24 @@ function emtss_render_theme_settings_page()
                         <span><?php esc_html_e('Outgoing email from address', 'emtss'); ?></span>
                         <input id="emtss-from-email" type="email" name="emtss_settings[from_email]" value="<?php echo esc_attr($settings['from_email'] ?? ''); ?>">
                     </label>
+                    <fieldset class="emtss-admin-field">
+                        <span><?php esc_html_e('Header logo tagline font size (px)', 'emtss'); ?></span>
+                        <div class="emtss-admin-size-controls">
+                            <label for="emtss-logo-tagline-font-desktop">
+                                <span><?php esc_html_e('Desktop', 'emtss'); ?></span>
+                                <input id="emtss-logo-tagline-font-desktop" type="number" min="4" max="30" step="0.5" name="emtss_settings[logo_tagline_font_desktop]" value="<?php echo esc_attr($settings['logo_tagline_font_desktop'] ?? '7'); ?>">
+                            </label>
+                            <label for="emtss-logo-tagline-font-tablet">
+                                <span><?php esc_html_e('Tablet', 'emtss'); ?></span>
+                                <input id="emtss-logo-tagline-font-tablet" type="number" min="4" max="30" step="0.5" name="emtss_settings[logo_tagline_font_tablet]" value="<?php echo esc_attr($settings['logo_tagline_font_tablet'] ?? '7'); ?>">
+                            </label>
+                            <label for="emtss-logo-tagline-font-mobile">
+                                <span><?php esc_html_e('Mobile', 'emtss'); ?></span>
+                                <input id="emtss-logo-tagline-font-mobile" type="number" min="4" max="30" step="0.5" name="emtss_settings[logo_tagline_font_mobile]" value="<?php echo esc_attr($settings['logo_tagline_font_mobile'] ?? '6'); ?>">
+                            </label>
+                        </div>
+                        <small><?php esc_html_e('Desktop: above 991px. Tablet: 576–991px. Mobile: up to 575px.', 'emtss'); ?></small>
+                    </fieldset>
                 </section>
 
                 <section class="emtss-admin-card">

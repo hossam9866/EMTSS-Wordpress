@@ -50,6 +50,20 @@ function emtss_enqueue_assets()
     wp_enqueue_style('intl-tel-input', 'https://cdn.jsdelivr.net/npm/intl-tel-input@29.0.5/dist/css/intlTelInput.min.css', array(), '29.0.5');
     wp_enqueue_style('emtss-theme', EMTSS_THEME_URI . '/assets/css/theme.css', array('bootstrap', 'bootstrap-icons', 'emtss-fonts', 'intl-tel-input'), EMTSS_VERSION);
 
+    $theme_settings = emtss_get_theme_options()['settings'] ?? array();
+    $tagline_sizes = array(
+        'desktop' => min(30, max(4, (float) ($theme_settings['logo_tagline_font_desktop'] ?? 7))),
+        'tablet'  => min(30, max(4, (float) ($theme_settings['logo_tagline_font_tablet'] ?? 7))),
+        'mobile'  => min(30, max(4, (float) ($theme_settings['logo_tagline_font_mobile'] ?? 6))),
+    );
+    $tagline_css = sprintf(
+        ':root{--emtss-logo-tagline-size:%1$spx;--emtss-logo-tagline-size-tablet:%2$spx;--emtss-logo-tagline-size-mobile:%3$spx;}',
+        $tagline_sizes['desktop'],
+        $tagline_sizes['tablet'],
+        $tagline_sizes['mobile']
+    );
+    wp_add_inline_style('emtss-theme', $tagline_css);
+
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js', array(), '5.3.3', true);
     wp_enqueue_script('intl-tel-input', 'https://cdn.jsdelivr.net/npm/intl-tel-input@29.0.5/dist/js/intlTelInput.min.js', array(), '29.0.5', true);
     wp_enqueue_script('emtss-theme', EMTSS_THEME_URI . '/assets/js/theme.js', array('bootstrap', 'intl-tel-input'), EMTSS_VERSION, true);

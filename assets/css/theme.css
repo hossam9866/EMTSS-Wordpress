@@ -104,7 +104,7 @@ section[id] {
   display: block;
   max-width: 100%;
   overflow-wrap: anywhere;
-  font: 600 9px/1.25 "IBM Plex Mono", "Inter", Arial, sans-serif;
+  font: 600 var(--emtss-logo-tagline-size, 7px)/1.25 "IBM Plex Mono", "Inter", Arial, sans-serif;
   letter-spacing: 0.11em;
   text-transform: uppercase;
   opacity: 0.78;
@@ -1123,6 +1123,10 @@ section[id] {
 }
 
 @media (max-width: 991.98px) {
+  .emtss-logo-tagline {
+    font-size: var(--emtss-logo-tagline-size-tablet, 7px);
+  }
+
   .emtss-header {
     min-height: 72px;
   }
@@ -1421,6 +1425,13 @@ section[id] {
   }
 }
 
+@media (max-width: 575.98px) {
+  .emtss-logo-tagline {
+    font-size: var(--emtss-logo-tagline-size-mobile, 6px);
+    letter-spacing: 0.07em;
+  }
+}
+
 @media (max-width: 380px) {
   .emtss-logo img,
   .custom-logo {
@@ -1429,11 +1440,6 @@ section[id] {
 
   .emtss-logo {
     max-width: 52vw;
-  }
-
-  .emtss-logo-tagline {
-    font-size: 8px;
-    letter-spacing: 0.07em;
   }
 
   .emtss-btn {
